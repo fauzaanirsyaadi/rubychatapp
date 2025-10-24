@@ -5,53 +5,50 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+# Framework
+gem 'rails', '~> 7.2', '>= 7.2.1'
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 7.0'
-# Use postgresql as the database for Active Record
+# Database
 gem 'pg', '>= 1.5'
-# Use Puma as the app server
-gem 'puma', '>= 6.0'
-# Use SCSS for stylesheets
-gem 'sassc-rails'
-# Use Uglifier as compressor for JavaScript assets
-gem 'terser'
-# See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
 
-# Use CoffeeScript for .coffee assets and views
+# App server
+gem 'puma', '~> 6.4'
+
+# Assets (Sprockets pipeline)
+gem 'sassc-rails'            # SCSS untuk Sprockets
+gem 'terser'                 # JS compressor
+
+# Frontend lama (dipertahankan untuk kompatibilitas)
 gem 'coffee-rails', '~> 5.0'
-# Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.5'
-# Use Redis adapter to run Action Cable in production
-# gem 'redis', '~> 4.0'
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'jquery-rails', '>= 4.6'
+gem 'bootstrap', '>= 5.0'
 
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
+# Utilities
+gem 'jbuilder', '~> 2.12'
+gem 'pusher', '>= 2.0'
+# Catatan: Figaro tidak lagi aktif dikembangkan, tapi tetap bisa dipakai.
+# Jika tetap ingin, pertahankan:
+gem 'figaro', '>= 1.2'
+# Alternatif yang lebih modern:
+# gem 'dotenv-rails', groups: [:development, :test]
+
+# Windows tzinfo data
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  # Ganti byebug (deprecated) dengan debug
+  gem 'debug', '>= 1.9'
 end
 
 group :development do
-  # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
-  gem 'web-console', '>= 4.0'
+  gem 'web-console', '>= 4.2'
   gem 'listen', '>= 3.8'
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
-  gem 'spring-watcher-listen', '>= 2.1'
+  # Spring sudah deprecated/diarsipkan, sebaiknya dihapus
+  # gem 'spring'
+  # gem 'spring-watcher-listen', '>= 2.1'
+  # Opsional untuk percepat boot (aman di Win)
+  gem 'bootsnap', '>= 1.18', require: false
+  gem 'wdm', '>= 0.1.0', platforms: [:mingw, :mswin, :x64_mingw]
+  gem 'fiddle'
 end
-
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
-
-gem 'bootstrap', '>= 5.0'
-gem 'jquery-rails', '>= 4.6'
-gem 'pusher', '>= 2.0'
-gem 'figaro', '>= 1.2'

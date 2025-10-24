@@ -1,8 +1,12 @@
+# config/initializers/pusher.rb
 require 'pusher'
 
-Pusher.app_id = ENV["PUSHER_APP_ID"]
-Pusher.key = ENV["PUSHER_KEY"]
-Pusher.secret = ENV["PUSHER_SECRET"]
-Pusher.cluster = ENV["PUSHER_CLUSTER"]
 Pusher.logger = Rails.logger
-Pusher.encrypted = true
+
+PUSHER_CLIENT = Pusher::Client.new(
+  app_id: ENV.fetch('PUSHER_APP_ID'),
+  key:    ENV.fetch('PUSHER_KEY'),
+  secret: ENV.fetch('PUSHER_SECRET'),
+  cluster: ENV.fetch('PUSHER_CLUSTER', 'ap1'),
+  use_tls: true
+)
