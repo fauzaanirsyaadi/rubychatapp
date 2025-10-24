@@ -1,25 +1,29 @@
-# config/database.yml
-
 default: &default
   adapter: postgresql
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS", 5) %>
-  host: <%= ENV.fetch("DB_HOST") %>
+  timeout: 5000
+  # Utamakan DATABASE_URL jika tersedia (Heroku/Supabase umum)
+  url: <%= ENV["DATABASE_URL"] %>
+  # Jika DATABASE_URL kosong, gunakan field-field di bawah (tanpa melempar error)
+  <% if ENV["DATABASE_URL"].to_s.strip.empty? %>
+  host: <%= ENV["DB_HOST"] || "jlammtripkisyxhpxlpu.db.ap-southeast-1.nhost.run" %>
   port: <%= ENV.fetch("DB_PORT", 5432) %>
-  database: <%= ENV.fetch("DB_NAME") %>
+  database: <%= ENV["DB_NAME"] || "jlammtripkisyxhpxlpu" %>
   username: <%= ENV.fetch("DB_USER", "postgres") %>
-  password: <%= ENV.fetch("DB_PASSWORD") %>
-  variables:
-    statement_timeout: 60000
-  sslmode: require
+  password: <%= ENV["DB_PASSWORD"] %>
+  <% end %>
+  # Supabase biasanya butuh SSL
+  sslmode: <%= ENV.fetch("DB_SSLMODE", "require") %>
 
 development:
-  <<: *default
+  adapter: postgresql
+  url: <%= ENV["DATABASE_URL"] %>
 
 test:
-  <<: *default
-  database: <%= ENV.fetch("DB_NAME_TEST", ENV.fetch("DB_NAME")) %>
+  adapter: postgresql
+  url: <%= ENV["DATABASE_URL_TEST"] || ENV["DATABASE_URL"] %>
 
 production:
+  adapter: postgresql
   url: <%= ENV["DATABASE_URL"] %>
-  sslmode: require
