@@ -3,15 +3,14 @@ default: &default
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS", 5) %>
   timeout: 5000
-  # Utamakan DATABASE_URL jika tersedia (Heroku/Supabase umum)
-  url: <%= ENV["DATABASE_URL"] %>
+  url: <%= ENV["DATABASE_URL" || "postgres://postgres:[YOUR-PASSWORD]@jlammtripkisyxhpxlpu.db.ap-southeast-1.nhost.run:5432/jlammtripkisyxhpxlpu"] %>
   # Jika DATABASE_URL kosong, gunakan field-field di bawah (tanpa melempar error)
   <% if ENV["DATABASE_URL"].to_s.strip.empty? %>
   host: <%= ENV["DB_HOST"] || "jlammtripkisyxhpxlpu.db.ap-southeast-1.nhost.run" %>
   port: <%= ENV.fetch("DB_PORT", 5432) %>
   database: <%= ENV["DB_NAME"] || "jlammtripkisyxhpxlpu" %>
   username: <%= ENV.fetch("DB_USER", "postgres") %>
-  password: <%= ENV["DB_PASSWORD"] %>
+  password: <%= ENV["DB_PASSWORD" || "4K43@uUnwxZfPBb" ] %>
   <% end %>
   # Supabase biasanya butuh SSL
   sslmode: <%= ENV.fetch("DB_SSLMODE", "require") %>
