@@ -32,10 +32,11 @@ $(document).ready =>
     $('.chat-box').scrollTop($('.chat-box')[0].scrollHeight)
     return
 
-  # Event handler untuk input username
+  # Event handler untuk input username - hanya tangkap Enter key
   $('.sidebar-form').on 'keypress', (event) ->
     if event.which == 13 or event.keyCode == 13
       event.preventDefault()
+      
       username = $(this).val().trim()
       
       if username.length > 0
@@ -44,9 +45,12 @@ $(document).ready =>
         $('.username').removeClass('d-none')
         $('.username-input-wrapper').hide()
         $('#message').prop('disabled', false)
+        $('#message').attr('placeholder', 'Type your message and press Enter...')
         $('#message').focus()
       else
         alert('Please enter a username')
+      
+      return false
     return
 
   # Prevent default form submission
@@ -93,6 +97,8 @@ $(document).ready =>
       
       if $(this).val().trim().length > 0
         $('#chat-form').submit()
+      
+      return false
     return
 
   # Tambahkan event handler untuk klik pada message input jika belum ada username
