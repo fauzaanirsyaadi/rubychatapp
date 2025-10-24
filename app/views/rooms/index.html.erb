@@ -1,0 +1,47 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <h1 class="text-center mb-4">Chat Rooms</h1>
+      
+      <div class="card mb-4">
+        <div class="card-header">
+          <h5>Create New Room</h5>
+        </div>
+        <div class="card-body">
+          <%= form_with(model: @room, local: true) do |form| %>
+            <div class="input-group">
+              <%= form.text_field :name, class: "form-control", placeholder: "Enter room name", required: true %>
+              <%= form.submit "Create Room", class: "btn btn-primary" %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h5>Available Rooms</h5>
+        </div>
+        <div class="list-group list-group-flush">
+          <% if @rooms.any? %>
+            <% @rooms.each do |room| %>
+              <div class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                <%= link_to room, class: "text-decoration-none text-dark flex-grow-1" do %>
+                  <span><i class="bi bi-chat-dots"></i> <%= room.name %></span>
+                  <span class="badge bg-primary rounded-pill ms-2"><%= room.chats.count %> messages</span>
+                <% end %>
+                <%= button_to 'Delete', room_path(room), 
+                    method: :delete, 
+                    data: { confirm: "Are you sure you want to delete '#{room.name}'? All messages will be deleted too." },
+                    class: "btn btn-danger btn-sm ms-2" %>
+              </div>
+            <% end %>
+          <% else %>
+            <div class="list-group-item text-center text-muted">
+              No rooms available. Create one to start chatting!
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

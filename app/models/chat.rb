@@ -1,7 +1,9 @@
 class Chat < ApplicationRecord
-  after_create :notify_pusher, on: :create
+  belongs_to :room
+  
+  after_create :notify_pusher
 
   def notify_pusher
-    Pusher.trigger('chat', 'new', self.as_json)
+    PUSHER_CLIENT.trigger("chat-room-#{room_id}", 'new', self.as_json)
   end
 end

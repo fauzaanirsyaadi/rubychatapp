@@ -246,6 +246,7 @@ GEM
     tzinfo-data (1.2025.2)
       tzinfo (>= 1.0.0)
     useragent (0.16.11)
+    wdm (0.2.0)
     web-console (4.2.1)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -277,6 +278,7 @@ DEPENDENCIES
   terser
   turbolinks (~> 5)
   tzinfo-data
+  wdm (>= 0.1.0)
   web-console (>= 4.2)
 
 BUNDLED WITH

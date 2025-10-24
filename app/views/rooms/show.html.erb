@@ -1,0 +1,61 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-3 col-md-2 bg-dark full-height sidebar">
+      <div class="sidebar-content">
+        <h5 class="text-white mt-3 text-center">Room: <%= @room.name %></h5>
+        <hr class="bg-white">
+        
+        <!-- Username Input Form -->
+        <div class="username-input-wrapper">
+          <label class="text-white small mb-2">Enter your username:</label>
+          <input type="text" class="form-control sidebar-form" placeholder="Type username and press Enter" required autofocus />
+          <small class="text-warning mt-2 d-block">⚠️ Username required to chat</small>
+        </div>
+        
+        <!-- Username Display (hidden by default) -->
+        <div class="username d-none">
+          <h6 class="text-white mt-3 text-center">
+            <i class="bi bi-person-circle"></i> 
+            <span class="username-display"></span>
+          </h6>
+          <small class="text-success text-center d-block">✓ Ready to chat</small>
+        </div>
+        
+        <%= link_to "← Back to Rooms", rooms_path, class: "btn btn-sm btn-outline-light mt-3 w-100" %>
+      </div>
+    </div>
+    
+    <div class="col-9 col-md-10 bg-light full-height">
+      <div class="container-fluid">
+        <div class="chat-box py-2" data-room-id="<%= @room.id %>">
+          <% if @chats.empty? %>
+            <div class="text-center text-muted mt-5">
+              <p>No messages yet. Be the first to start the conversation!</p>
+            </div>
+          <% else %>
+            <% @chats.each do |chat| %>
+              <div class="col-12">
+                <div class="chat bg-secondary d-inline-block text-left text-white mb-2">
+                  <div class="chat-bubble">
+                    <small class="chat-username"><%= chat.username %></small>
+                    <small class="chat-timestamp"> • <%= chat.created_at.strftime("%d/%m/%Y %H:%M") %></small>
+                    <p class="m-0 chat-message"><%= chat.message %></p>
+                  </div>
+                </div>
+              </div>
+            <% end %>
+          <% end %>
+        </div>
+        
+        <div class="chat-text-input">
+          <%= form_with(model: [@room, @chat], remote: true, format: :json, id: 'chat-form', data: { turbolinks: false }) do |form| %>
+            <div class="field position-relative">
+              <%= form.text_field :message, id: :message, class: "form-control", placeholder: "⚠️ Enter username first, then type your message...", required: true, disabled: true %>
+              <%= form.hidden_field :username, id: :username %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

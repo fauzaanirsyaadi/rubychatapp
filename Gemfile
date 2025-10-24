@@ -31,6 +31,7 @@ gem 'figaro', '>= 1.2'
 
 # Windows tzinfo data
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 
 group :development, :test do
   gem 'debug', '>= 1.9'

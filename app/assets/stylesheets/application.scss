@@ -13,41 +13,149 @@
  *= require_tree .
  *= require_self
  */
- @import "bootstrap";
- @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 
- body {
+body {
   font-family: 'Josefin Sans', sans-serif;
- }
+}
 
- .full-height {
-   height: 100vh;
-   overflow: hidden;
- }
+.full-height {
+  height: 100vh;
+  overflow: hidden;
+}
 
- input.form-control.sidebar-form {
+.username-input-wrapper {
   position: absolute;
   bottom: 0;
   left: 0;
-  border: 0;
-  border-radius: 0;
+  right: 0;
+  padding: 1rem;
+  
+  label {
+    font-size: 0.85rem;
+    font-weight: bold;
+  }
+  
+  .text-warning {
+    font-size: 0.75rem;
+    font-style: italic;
+  }
+}
+
+input.form-control.sidebar-form {
+  width: 100%;
+  border: 2px solid #ffc107;
+  border-radius: 4px;
+  padding: 0.5rem;
+  
+  &:focus {
+    border-color: #ffed4e;
+    box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.25);
+  }
+}
+
+.username {
+  margin-top: 1rem;
+  
+  h6 {
+    i {
+      font-size: 1.2rem;
+      margin-right: 0.25rem;
+    }
+  }
+  
+  .text-success {
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+  }
 }
 
 .chat-box {
-  height: 94vh;
-  overflow: scroll;
+  height: 88vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 1rem;
+}
+
+.chat-text-input {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: calc(100% - 16.666667%); /* 100% - col-2 width */
+  padding: 1rem;
+  background: white;
+  border-top: 1px solid #dee2e6;
+  
+  #message {
+    &:disabled {
+      background-color: #e9ecef;
+      cursor: not-allowed;
+      opacity: 0.6;
+    }
+    
+    &:not(:disabled) {
+      border: 2px solid #28a745;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .chat-text-input {
+    width: calc(100% - 16.666667%); /* 100% - col-md-2 width */
+  }
 }
 
 .chat {
-  border-radius: 3px;
-  padding: 0rem 2rem 0 1rem;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  max-width: 80%;
+  word-wrap: break-word;
 }
 
 .chat-username {
   font-size: 0.7rem;
+  font-weight: bold;
+  opacity: 0.9;
+}
+
+.chat-timestamp {
+  font-size: 0.65rem;
+  opacity: 0.7;
+  font-style: italic;
 }
 
 .chat-message {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
+  margin: 0.25rem 0 0 0;
+}
+
+.sidebar-content {
+  position: relative;
+  height: 100%;
+  padding: 1rem;
+  
+  .btn-outline-danger {
+    color: #dc3545;
+    border-color: #dc3545;
+    
+    &:hover {
+      background-color: #dc3545;
+      color: white;
+    }
+  }
+}
+
+.list-group-item {
+  &.d-flex {
+    align-items: center;
+  }
+  
+  .btn-danger {
+    &:hover {
+      background-color: #dc3545;
+      border-color: #dc3545;
+    }
+  }
 }
 
