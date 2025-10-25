@@ -35,6 +35,14 @@ gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 
 group :development, :test do
   gem 'debug', '>= 1.9'
+  gem 'rspec-rails', '~> 6.0'
+  gem 'factory_bot_rails', '~> 6.2'
+  gem 'faker', '~> 3.2'
+end
+
+group :test do
+  gem 'shoulda-matchers', '~> 5.3'
+  gem 'database_cleaner-active_record', '~> 2.1'
 end
 
 group :development do

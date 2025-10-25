@@ -9278,3 +9278,1097 @@ Processing by RoomsController#index as HTML
 Completed 200 OK in 271ms (Views: 154.9ms | ActiveRecord: 109.6ms (3 queries, 0 cached) | GC: 0.2ms)
 
 
+Started GET "/rooms" for 127.0.0.1 at 2025-10-24 21:16:50 +0700
+Processing by RoomsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/index.html.erb within layouts/application
+  [1m[36mRoom Exists? (1849.7ms)[0m  [1m[34mSELECT 1 AS one FROM "rooms" LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRoom Load (24.3ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  [1m[36mChat Count (34.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "chats" WHERE "chats"."room_id" = $1[0m  [["room_id", 1]]
+  Rendered rooms/index.html.erb within layouts/application (Duration: 2138.5ms | GC: 0.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 2575.6ms | GC: 0.3ms)
+Completed 200 OK in 3298ms (Views: 407.1ms | ActiveRecord: 2185.3ms (3 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__cc5c2221_c9d6_451c_90d8_5e7a66def29b__0" for 127.0.0.1 at 2025-10-24 21:16:57 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__2f37a9c3_d5ae_4e3c_a9ad_d9ed01952e0a__1" for 127.0.0.1 at 2025-10-24 21:16:57 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__704d7ce5_eba3_4a5d_9d6e_43dea00dd8a5__2" for 127.0.0.1 at 2025-10-24 21:16:58 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__c179069e_1de6_431e_9adc_44e3b39e787d__3" for 127.0.0.1 at 2025-10-24 21:16:59 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__f69fd9fe_6c98_40cf_b4e6_46ac83c64983__4" for 127.0.0.1 at 2025-10-24 21:17:00 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__6ff2a2a9_00de_4335_823d_3c31f3de7c08__5" for 127.0.0.1 at 2025-10-24 21:17:00 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__1574890b_d757_4281_a77e_cf460caa63d1__0" for 127.0.0.1 at 2025-10-24 21:18:12 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__55f1af8e_6160_4933_91d9_6b91ad490ca1__1" for 127.0.0.1 at 2025-10-24 21:18:12 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__5d729332_4742_41a1_89f8_85f15f5ebedc__2" for 127.0.0.1 at 2025-10-24 21:18:12 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__e20d86f1_ad14_4af2_8658_2cbaa27d6cdc__3" for 127.0.0.1 at 2025-10-24 21:18:12 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__b308099f_d114_44ca_ae73_3f69c0b69dcb__4" for 127.0.0.1 at 2025-10-24 21:18:12 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__4feb592d_f0fe_4382_9e33_0c8316a8392f__5" for 127.0.0.1 at 2025-10-24 21:18:12 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__118d9d58_9101_446e_9a81_532ea67bbb8a__0" for 127.0.0.1 at 2025-10-24 21:18:15 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__d7d3ecff_7346_4755_a318_adb5297e7400__1" for 127.0.0.1 at 2025-10-24 21:18:15 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__6ccab312_49ac_4757_8b60_f15073634635__2" for 127.0.0.1 at 2025-10-24 21:18:15 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__09eadfff_c9ba_4e7b_89a1_8435a96dd2cf__0" for 127.0.0.1 at 2025-10-24 21:18:15 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__0ba86a65_20c7_4e88_acfd_e620e0d790bb__1" for 127.0.0.1 at 2025-10-24 21:18:15 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__2b97478c_1cf5_41ac_be7d_112902528e27__2" for 127.0.0.1 at 2025-10-24 21:18:15 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__631e5305_0333_4b9c_82a7_14e278f2aab7__0" for 127.0.0.1 at 2025-10-24 21:18:16 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__cf14abc7_60f0_422a_ae80_e14f07687d44__1" for 127.0.0.1 at 2025-10-24 21:18:16 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__d4391c12_44ef_43cc_8e03_c8a1e865fd84__2" for 127.0.0.1 at 2025-10-24 21:18:16 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__92a4730c_830c_4723_abad_e421a72d197d__0" for 127.0.0.1 at 2025-10-24 21:18:16 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__51bcd254_1566_4711_888f_c5aa0fdbc88c__1" for 127.0.0.1 at 2025-10-24 21:18:16 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__5ec3fe6f_c238_46b6_a193_5fcf9af5412c__2" for 127.0.0.1 at 2025-10-24 21:18:16 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__09f9faed_eea5_4800_b870_1135e15028d4__0" for 127.0.0.1 at 2025-10-24 21:18:16 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__49bad50f_d56b_4e8f_a4df_1727ec0af8f8__2" for 127.0.0.1 at 2025-10-24 21:18:16 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__cff6b14a_0e30_4489_9688_d85933905260__1" for 127.0.0.1 at 2025-10-24 21:18:16 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__c1dc6a77_f525_4f3c_9a18_e9a46dcd1d48__0" for 127.0.0.1 at 2025-10-24 21:18:17 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__078f11b0_8d03_42bf_a737_4226f521e06f__1" for 127.0.0.1 at 2025-10-24 21:18:17 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__a2bb56f4_a365_4bc8_a765_b22aba9c856f__2" for 127.0.0.1 at 2025-10-24 21:18:17 +0700
+Started GET "/rooms" for 127.0.0.1 at 2025-10-24 21:24:16 +0700
+Processing by RoomsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/index.html.erb within layouts/application
+  [1m[36mRoom Exists? (901.5ms)[0m  [1m[34mSELECT 1 AS one FROM "rooms" LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRoom Load (56.7ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  [1m[36mChat Count (21.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "chats" WHERE "chats"."room_id" = $1[0m  [["room_id", 1]]
+  Rendered rooms/index.html.erb within layouts/application (Duration: 1143.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1329.2ms | GC: 0.0ms)
+Completed 200 OK in 1436ms (Views: 59.8ms | ActiveRecord: 1283.9ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__b0bec54a_461a_4683_accf_bf0fdcd5bd74__0" for 127.0.0.1 at 2025-10-24 21:24:19 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__38b2e49c_acb8_4355_a002_ad3369c30655__1" for 127.0.0.1 at 2025-10-24 21:24:19 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__24a8577b_4702_4f94_bbe9_6cb503f507da__2" for 127.0.0.1 at 2025-10-24 21:24:19 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__3c770154_2419_4aee_97b4_a1b7d2684114__3" for 127.0.0.1 at 2025-10-24 21:24:19 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__46ee7951_7f88_4b9b_8df4_7d01d8304e4a__4" for 127.0.0.1 at 2025-10-24 21:24:19 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__9f2a4be1_2507_42dc_8570_4f95fa45960a__5" for 127.0.0.1 at 2025-10-24 21:24:19 +0700
+Started GET "/rooms/1" for 127.0.0.1 at 2025-10-24 21:24:21 +0700
+Processing by RoomsController#show as */*
+  Parameters: {"id" => "1"}
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__f8f21211_b149_4698_9570_afc835cdb075__0" for 127.0.0.1 at 2025-10-24 21:24:22 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__36937397_58fb_4282_83b6_b3d585c68228__1" for 127.0.0.1 at 2025-10-24 21:24:22 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__13f53dab_a25a_42dd_89db_754a331ccab6__2" for 127.0.0.1 at 2025-10-24 21:24:22 +0700
+  [1m[36mRoom Load (20.3ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/show.html.erb within layouts/application
+  [1m[36mChat Exists? (61.1ms)[0m  [1m[34mSELECT 1 AS one FROM "chats" WHERE "chats"."room_id" = $1 LIMIT $2[0m  [["room_id", 1], ["LIMIT", 1]]
+  [1m[36mChat Load (21.4ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."room_id" = $1 ORDER BY "chats"."created_at" ASC[0m  [["room_id", 1]]
+  Rendered rooms/show.html.erb within layouts/application (Duration: 167.7ms | GC: 0.0ms)
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__24ad7c2d_c8be_4ddd_b4f5_548ae4faa57a__0" for 127.0.0.1 at 2025-10-24 21:24:22 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__ef40625e_f2c7_4907_aee6_6a08dacc2dc0__1" for 127.0.0.1 at 2025-10-24 21:24:22 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__368d6ddf_de25_478b_864b_8c406b80cfe7__2" for 127.0.0.1 at 2025-10-24 21:24:22 +0700
+  Rendered layout layouts/application.html.erb (Duration: 355.8ms | GC: 0.0ms)
+Completed 200 OK in 773ms (Views: 277.1ms | ActiveRecord: 129.9ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/rooms/1" for 127.0.0.1 at 2025-10-24 21:24:22 +0700
+Processing by RoomsController#show as HTML
+  Parameters: {"id" => "1"}
+  [1m[36mRoom Load (27.7ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/show.html.erb within layouts/application
+  [1m[36mChat Exists? (40.3ms)[0m  [1m[34mSELECT 1 AS one FROM "chats" WHERE "chats"."room_id" = $1 LIMIT $2[0m  [["room_id", 1], ["LIMIT", 1]]
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__2ff834db_541c_4917_8d39_79f0bb1f68b2__0" for 127.0.0.1 at 2025-10-24 21:24:22 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__e278d1d4_e95b_40fe_a767_04d2e5e35542__1" for 127.0.0.1 at 2025-10-24 21:24:22 +0700
+  [1m[36mChat Load (51.2ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."room_id" = $1 ORDER BY "chats"."created_at" ASC[0m  [["room_id", 1]]
+  Rendered rooms/show.html.erb within layouts/application (Duration: 107.5ms | GC: 0.0ms)
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__5dbd0622_536b_4ba9_a7b1_20a15aa315a9__2" for 127.0.0.1 at 2025-10-24 21:24:22 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__3bfe82c5_fc61_4d5f_9a46_13a190015340__2" for 127.0.0.1 at 2025-10-24 21:24:23 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__a1c8f061_6c0e_4643_9ed5_9e7aa56c4cec__1" for 127.0.0.1 at 2025-10-24 21:24:23 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__bf78f61a_0b7b_440c_8146_f5ccfbcf69c1__0" for 127.0.0.1 at 2025-10-24 21:24:23 +0700
+  Rendered layout layouts/application.html.erb (Duration: 691.9ms | GC: 0.3ms)
+Completed 200 OK in 760ms (Views: 602.4ms | ActiveRecord: 119.0ms (3 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__695e952f_e05a_4409_aadb_367d6acb3392__0" for 127.0.0.1 at 2025-10-24 21:24:23 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__2d40c6bd_4819_4fa9_8798_616bad845e80__1" for 127.0.0.1 at 2025-10-24 21:24:23 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__bcab3d4c_d89d_419c_a8fa_b56e5adeb6a0__2" for 127.0.0.1 at 2025-10-24 21:24:23 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__92cd7f16_7973_4952_9249_41b11292079f__0" for 127.0.0.1 at 2025-10-24 21:24:24 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__3755f155_5f6e_4363_a281_cb9af5da6e93__1" for 127.0.0.1 at 2025-10-24 21:24:24 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__4d2c0fe5_f4f4_420c_b5d3_0cd93aca8297__2" for 127.0.0.1 at 2025-10-24 21:24:24 +0700
+Started GET "/rooms/1" for 127.0.0.1 at 2025-10-24 21:24:24 +0700
+Processing by RoomsController#show as HTML
+  Parameters: {"id" => "1"}
+  [1m[36mRoom Load (37.0ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/show.html.erb within layouts/application
+  [1m[36mChat Exists? (51.5ms)[0m  [1m[34mSELECT 1 AS one FROM "chats" WHERE "chats"."room_id" = $1 LIMIT $2[0m  [["room_id", 1], ["LIMIT", 1]]
+  [1m[36mChat Load (41.7ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."room_id" = $1 ORDER BY "chats"."created_at" ASC[0m  [["room_id", 1]]
+  Rendered rooms/show.html.erb within layouts/application (Duration: 103.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 270.1ms | GC: 0.0ms)
+Completed 200 OK in 339ms (Views: 179.8ms | ActiveRecord: 130.0ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/rooms/1" for 127.0.0.1 at 2025-10-24 21:31:24 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (32.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RoomsController#show as HTML
+  Parameters: {"id" => "1"}
+  [1m[36mRoom Load (29.4ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/show.html.erb within layouts/application
+  [1m[36mChat Exists? (53.5ms)[0m  [1m[34mSELECT 1 AS one FROM "chats" WHERE "chats"."room_id" = $1 LIMIT $2[0m  [["room_id", 1], ["LIMIT", 1]]
+  [1m[36mChat Load (20.6ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."room_id" = $1 ORDER BY "chats"."created_at" ASC[0m  [["room_id", 1]]
+  Rendered rooms/show.html.erb within layouts/application (Duration: 162.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2856.4ms | GC: 0.2ms)
+Completed 200 OK in 4660ms (Views: 2814.8ms | ActiveRecord: 1204.0ms (3 queries, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__905df758_ce44_460b_abde_bcd3f1dd70f6__0" for 127.0.0.1 at 2025-10-24 21:31:32 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__e2362945_8adb_4dca_aeac_536cd60e011f__1" for 127.0.0.1 at 2025-10-24 21:31:32 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__f5f2c340_be41_43de_94f7_f9b91ce878f6__2" for 127.0.0.1 at 2025-10-24 21:31:32 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__39d04dc7_6aa6_4901_92a2_abd96bbb9aa1__3" for 127.0.0.1 at 2025-10-24 21:31:32 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__b646a368_3680_47ab_b0b4_0030a882f341__4" for 127.0.0.1 at 2025-10-24 21:31:32 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__13bd1eb8_ec00_4639_b7f7_70ec2151fdbb__5" for 127.0.0.1 at 2025-10-24 21:31:32 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__0e2ea135_450a_4a74_8d2d_da9873dac639__0" for 127.0.0.1 at 2025-10-24 21:31:36 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__545b88d8_2d06_4892_998a_aa6f62f8cdc9__1" for 127.0.0.1 at 2025-10-24 21:31:36 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__ef622fdd_215b_43ee_9463_5f5f2edb8ae2__2" for 127.0.0.1 at 2025-10-24 21:31:36 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__4ac3ab32_8c47_4374_b6a0_f1706f1caee6__2" for 127.0.0.1 at 2025-10-24 21:31:36 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__1585a234_69b4_4011_98a5_4f6f8ea7c0d0__1" for 127.0.0.1 at 2025-10-24 21:31:36 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__cbee1879_a084_4097_9329_c38e9f827df9__0" for 127.0.0.1 at 2025-10-24 21:31:36 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__598cb4d8_240c_4676_b8e0_85e146960549__2" for 127.0.0.1 at 2025-10-24 21:31:37 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__e1d7e6bf_6347_41aa_8996_9e8d14154ff4__1" for 127.0.0.1 at 2025-10-24 21:31:37 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__554780af_2168_4d4f_8d9d_4a6841cf03d8__0" for 127.0.0.1 at 2025-10-24 21:31:37 +0700
+Started GET "/rooms/1" for 127.0.0.1 at 2025-10-24 21:31:54 +0700
+Processing by RoomsController#show as HTML
+  Parameters: {"id" => "1"}
+  [1m[36mRoom Load (21.4ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/show.html.erb within layouts/application
+  [1m[36mChat Exists? (55.0ms)[0m  [1m[34mSELECT 1 AS one FROM "chats" WHERE "chats"."room_id" = $1 LIMIT $2[0m  [["room_id", 1], ["LIMIT", 1]]
+  [1m[36mChat Load (20.3ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."room_id" = $1 ORDER BY "chats"."created_at" ASC[0m  [["room_id", 1]]
+  Rendered rooms/show.html.erb within layouts/application (Duration: 83.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 241.6ms | GC: 0.0ms)
+Completed 200 OK in 297ms (Views: 172.0ms | ActiveRecord: 96.6ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__0dc511d1_7bb1_40d8_9c44_3209be2fcc9d__0" for 127.0.0.1 at 2025-10-24 21:31:54 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__d84400ae_fe69_4949_a974_25ba79a4209f__1" for 127.0.0.1 at 2025-10-24 21:31:54 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__42348555_f1e8_4734_bd46_1e9bc7eaa94b__2" for 127.0.0.1 at 2025-10-24 21:31:54 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__2dfcba94_4bc5_45f1_8bce_4d3d6fe5bb77__3" for 127.0.0.1 at 2025-10-24 21:31:55 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__b393571c_212e_4518_9bb4_d810bf9e83a2__5" for 127.0.0.1 at 2025-10-24 21:31:55 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__9a427a70_b864_414b_9132_5a80845adb84__4" for 127.0.0.1 at 2025-10-24 21:31:55 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__198f85aa_4e46_47ef_b620_136e6192b366__0" for 127.0.0.1 at 2025-10-24 21:31:56 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__c9c11ead_9019_477d_9b90_1d84e5730022__1" for 127.0.0.1 at 2025-10-24 21:31:56 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__b73626e6_79e1_4a57_b1b5_4a6c8c860c61__2" for 127.0.0.1 at 2025-10-24 21:31:56 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__3a697753_62a7_444c_9158_b32417771bca__0" for 127.0.0.1 at 2025-10-24 21:31:57 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__bd9c3520_94b7_4b86_99b1_31153ca71b0e__1" for 127.0.0.1 at 2025-10-24 21:31:57 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__354a5e46_f423_44f7_8e98_b7ec1f271b48__2" for 127.0.0.1 at 2025-10-24 21:31:57 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__f499dd33_8659_40df_ba6b_982bbd01709d__0" for 127.0.0.1 at 2025-10-24 21:31:57 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__718ed576_7f4a_47ce_9fa8_0628cd229ec4__1" for 127.0.0.1 at 2025-10-24 21:31:57 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__677840d7_476c_48c6_9c98_b396e5bd4247__2" for 127.0.0.1 at 2025-10-24 21:31:57 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__bcb381f4_4c8a_44d7_b3ca_ff3317487983__0" for 127.0.0.1 at 2025-10-24 21:31:57 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__e5e62de8_afab_46d0_a6e4_827e9a681dec__1" for 127.0.0.1 at 2025-10-24 21:31:57 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__7ceb1544_20d8_4944_b5d3_52d4b6f2ca12__2" for 127.0.0.1 at 2025-10-24 21:31:57 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__071988f7_3b39_47b2_ae0e_080f769a6b0f__0" for 127.0.0.1 at 2025-10-24 21:31:58 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__d4a9a6b4_96bf_480c_a773_294b5ea47234__1" for 127.0.0.1 at 2025-10-24 21:31:58 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__e69483f8_0eba_4c32_9c9b_a494ccd97e79__2" for 127.0.0.1 at 2025-10-24 21:31:58 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__49420ac9_bef3_418a_82d5_987be4958d35__0" for 127.0.0.1 at 2025-10-24 21:31:58 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__5564cbba_74cc_448e_80be_975782d5543b__1" for 127.0.0.1 at 2025-10-24 21:31:58 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__85649105_ef0d_4950_906e_8d614a56c5b2__2" for 127.0.0.1 at 2025-10-24 21:31:58 +0700
+Started GET "/rooms/1" for 127.0.0.1 at 2025-10-24 21:32:37 +0700
+Processing by RoomsController#show as HTML
+  Parameters: {"id" => "1"}
+  [1m[36mRoom Load (25.4ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/show.html.erb within layouts/application
+  [1m[36mChat Exists? (54.2ms)[0m  [1m[34mSELECT 1 AS one FROM "chats" WHERE "chats"."room_id" = $1 LIMIT $2[0m  [["room_id", 1], ["LIMIT", 1]]
+  [1m[36mChat Load (23.3ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."room_id" = $1 ORDER BY "chats"."created_at" ASC[0m  [["room_id", 1]]
+  Rendered rooms/show.html.erb within layouts/application (Duration: 84.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 196.5ms | GC: 0.2ms)
+Completed 200 OK in 253ms (Views: 121.7ms | ActiveRecord: 102.8ms (3 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__6b6af2f2_6042_4080_bf83_43df779317ad__0" for 127.0.0.1 at 2025-10-24 21:32:38 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__83d428cc_367d_439d_917c_01a516a63df1__1" for 127.0.0.1 at 2025-10-24 21:32:38 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__37138100_b7f2_49b0_896f_c58c22bfe024__2" for 127.0.0.1 at 2025-10-24 21:32:38 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__b076119e_35e6_4e09_8f52_c4c2e6456d13__3" for 127.0.0.1 at 2025-10-24 21:32:38 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__36bd4d21_a927_4bd5_9c85_40b488a9c580__4" for 127.0.0.1 at 2025-10-24 21:32:38 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__5c5193ee_58a9_48c7_9f0e_44dabda8f629__5" for 127.0.0.1 at 2025-10-24 21:32:38 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__d11d7af4_4366_4fa7_81e2_9be5a74339b3__2" for 127.0.0.1 at 2025-10-24 21:32:40 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__42ea3cf1_6cf4_407c_9af2_09c2b5e8c938__1" for 127.0.0.1 at 2025-10-24 21:32:40 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__1289da67_dc39_4025_af7a_bf3e27f05f07__0" for 127.0.0.1 at 2025-10-24 21:32:40 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__c01d978d_2f6e_4c2e_bddc_e6241cd5d8cb__0" for 127.0.0.1 at 2025-10-24 21:32:40 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__4c040d32_a23c_46fb_9d2c_cf4821296270__2" for 127.0.0.1 at 2025-10-24 21:32:41 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__1e490dc7_5438_4d31_816d_6418d6aa9565__1" for 127.0.0.1 at 2025-10-24 21:32:41 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__b445fc1d_0b77_4875_a8de_bd6fa3c02534__0" for 127.0.0.1 at 2025-10-24 21:32:41 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__4bfd2c1f_3bf8_440d_a343_9d5b160a7949__1" for 127.0.0.1 at 2025-10-24 21:32:41 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__a8d384a8_f2a4_4df0_9c32_855cb84f6d04__2" for 127.0.0.1 at 2025-10-24 21:32:41 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__521b83b2_0203_4d1f_b1c6_7aac1abc397f__0" for 127.0.0.1 at 2025-10-24 21:32:41 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__3626bd79_0765_441d_bd89_d1c96738694e__2" for 127.0.0.1 at 2025-10-24 21:32:41 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__1da1639e_2373_444c_b02a_092e9d39539d__1" for 127.0.0.1 at 2025-10-24 21:32:41 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__2388c02f_4aae_4cbb_ba13_79e07ed42c8c__1" for 127.0.0.1 at 2025-10-24 21:32:42 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__d297680c_4070_4a4d_af60_31b0475f1481__0" for 127.0.0.1 at 2025-10-24 21:32:42 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__86098d46_b02c_4dfa_9d69_8e768f47acff__2" for 127.0.0.1 at 2025-10-24 21:32:42 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__4895ae7c_4cbb_4dac_b307_b4e15a2e33f7__0" for 127.0.0.1 at 2025-10-24 21:32:42 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__5f2925a7_652e_4856_85c9_59bda095b410__1" for 127.0.0.1 at 2025-10-24 21:32:42 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__731ee7a4_47ea_49eb_b8fb_f79bf186bb19__2" for 127.0.0.1 at 2025-10-24 21:32:42 +0700
+Started GET "/rooms/1" for 127.0.0.1 at 2025-10-24 21:34:05 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (107.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RoomsController#show as HTML
+  Parameters: {"id" => "1"}
+  [1m[36mRoom Load (87.4ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/show.html.erb within layouts/application
+  [1m[36mChat Exists? (58.0ms)[0m  [1m[34mSELECT 1 AS one FROM "chats" WHERE "chats"."room_id" = $1 LIMIT $2[0m  [["room_id", 1], ["LIMIT", 1]]
+  [1m[36mChat Load (33.6ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."room_id" = $1 ORDER BY "chats"."created_at" ASC[0m  [["room_id", 1]]
+  Rendered rooms/show.html.erb within layouts/application (Duration: 237.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3102.9ms | GC: 0.2ms)
+Completed 200 OK in 5190ms (Views: 3040.8ms | ActiveRecord: 1944.2ms (3 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__ee1ff4ce_ceff_4ca0_9f61_42584ee5592e__0" for 127.0.0.1 at 2025-10-24 21:34:15 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__3de66545_41dc_4832_accd_d11ba9d11d21__1" for 127.0.0.1 at 2025-10-24 21:34:15 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__5bebcea7_b20a_4f6a_9aeb_66a31dc50f26__2" for 127.0.0.1 at 2025-10-24 21:34:15 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__f92837f8_9ed1_42d2_84c4_dae827a36f28__3" for 127.0.0.1 at 2025-10-24 21:34:15 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__5ce5b07c_bc5f_497e_805c_dd8c72cc74b0__4" for 127.0.0.1 at 2025-10-24 21:34:15 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__8cf0c173_e11d_4eac_8bd8_ce8666604925__5" for 127.0.0.1 at 2025-10-24 21:34:15 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__67283c6f_b36d_44d9_944a_23ceb3a5b607__0" for 127.0.0.1 at 2025-10-24 21:34:16 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__b69994d3_be9d_46fc_ac02_745b15278452__1" for 127.0.0.1 at 2025-10-24 21:34:16 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__674ad8dc_4645_4c22_bf4c_a78ca6881a6f__2" for 127.0.0.1 at 2025-10-24 21:34:16 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__14bab418_4503_457c_b4f3_f210a6f6f5d8__0" for 127.0.0.1 at 2025-10-24 21:34:17 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__8e40c8dd_50df_4c97_8a51_4c29b8fd799c__1" for 127.0.0.1 at 2025-10-24 21:34:17 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__c04f04dd_ff35_4314_9cae_9d4b8ba31084__2" for 127.0.0.1 at 2025-10-24 21:34:17 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__33d024ce_8523_4fcc_84c6_8481b62f7e16__1" for 127.0.0.1 at 2025-10-24 21:34:17 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__d6df32b3_bf76_463e_839a_3d47d2a54a89__0" for 127.0.0.1 at 2025-10-24 21:34:17 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__f4253ee9_e7b6_4583_8a4c_5e1788ed6285__2" for 127.0.0.1 at 2025-10-24 21:34:17 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__ad8abe84_7edf_4ac8_bb70_f635ceebb4d9__1" for 127.0.0.1 at 2025-10-24 21:34:18 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__0b43343d_1cff_4220_aef4_576b335639fe__0" for 127.0.0.1 at 2025-10-24 21:34:18 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__3f57e94d_559c_41aa_8461_66ca036a00f6__2" for 127.0.0.1 at 2025-10-24 21:34:18 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__f7e1c1d0_b574_40d9_adda_7991f33ca68b__0" for 127.0.0.1 at 2025-10-24 21:34:18 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__0b0dfd0b_e9dc_41f8_a4b6_0c9d30863eaf__1" for 127.0.0.1 at 2025-10-24 21:34:18 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__a17254a9_63bd_4877_9850_534ac4919f68__2" for 127.0.0.1 at 2025-10-24 21:34:19 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__f829091a_bb0b_433b_902f_0a58cf651295__2" for 127.0.0.1 at 2025-10-24 21:34:20 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__2d3d99ce_a6d9_42a6_9e90_cfda0892a711__0" for 127.0.0.1 at 2025-10-24 21:34:20 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__4cda7440_2218_433b_9618_11dd7cd640eb__1" for 127.0.0.1 at 2025-10-24 21:34:20 +0700
+Started POST "/rooms/1/chats.json" for 127.0.0.1 at 2025-10-24 21:34:42 +0700
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8" => "✓", "authenticity_token" => "l6YN0hN7_SNlGXY3tDFmiIrAyR0vw7qHk-VL5S_CN_6QKTgBH-CTAeo8Z4EIdok1puGpNj8QZORm8zzmgyFSDw", "chat" => {"message" => "test aja", "username" => "local"}, "room_id" => "1"}
+  [1m[36mRoom Load (37.0ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (20.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChat Create (44.5ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at", "room_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["message", "test aja"], ["username", "local"], ["created_at", "2025-10-24 14:34:42.760069"], ["updated_at", "2025-10-24 14:34:42.760069"], ["room_id", 1]]
+  [1m[36mTRANSACTION (23.7ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 673ms (Views: 0.2ms | ActiveRecord: 125.8ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/rooms/1" for 127.0.0.1 at 2025-10-24 21:34:54 +0700
+Processing by RoomsController#show as HTML
+  Parameters: {"id" => "1"}
+  [1m[36mRoom Load (290.6ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/show.html.erb within layouts/application
+  [1m[36mChat Exists? (40.5ms)[0m  [1m[34mSELECT 1 AS one FROM "chats" WHERE "chats"."room_id" = $1 LIMIT $2[0m  [["room_id", 1], ["LIMIT", 1]]
+  [1m[36mChat Load (23.8ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."room_id" = $1 ORDER BY "chats"."created_at" ASC[0m  [["room_id", 1]]
+  Rendered rooms/show.html.erb within layouts/application (Duration: 74.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 159.9ms | GC: 0.0ms)
+Completed 200 OK in 515ms (Views: 98.3ms | ActiveRecord: 354.8ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/rooms/1/chats.json" for 127.0.0.1 at 2025-10-24 21:35:12 +0700
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8" => "✓", "authenticity_token" => "HQi2xraeiqn7Q8LnFgAmGv6JOauHaWm2koGiB5fqpD8QVyEgiCTrBe09DLCYp7_62FABtBEnU9-a1dALeV0q3A", "chat" => {"message" => "apakah realtime", "username" => "local incognito"}, "room_id" => "1"}
+  [1m[36mRoom Load (28.4ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (20.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChat Create (60.5ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at", "room_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["message", "apakah realtime"], ["username", "local incognito"], ["created_at", "2025-10-24 14:35:13.349253"], ["updated_at", "2025-10-24 14:35:13.349253"], ["room_id", 1]]
+  [1m[36mTRANSACTION (29.9ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 671ms (Views: 0.4ms | ActiveRecord: 138.8ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/rooms/1/chats.json" for 127.0.0.1 at 2025-10-24 21:35:22 +0700
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8" => "✓", "authenticity_token" => "l6YN0hN7_SNlGXY3tDFmiIrAyR0vw7qHk-VL5S_CN_6QKTgBH-CTAeo8Z4EIdok1puGpNj8QZORm8zzmgyFSDw", "chat" => {"message" => "iyaa realtime", "username" => "local"}, "room_id" => "1"}
+  [1m[36mRoom Load (21.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (21.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChat Create (51.0ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at", "room_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["message", "iyaa realtime"], ["username", "local"], ["created_at", "2025-10-24 14:35:22.960735"], ["updated_at", "2025-10-24 14:35:22.960735"], ["room_id", 1]]
+  [1m[36mTRANSACTION (28.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 158ms (Views: 0.4ms | ActiveRecord: 121.9ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/rooms" for 127.0.0.1 at 2025-10-24 21:35:41 +0700
+Processing by RoomsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/index.html.erb within layouts/application
+  [1m[36mRoom Exists? (68.2ms)[0m  [1m[34mSELECT 1 AS one FROM "rooms" LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRoom Load (35.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  [1m[36mChat Count (22.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "chats" WHERE "chats"."room_id" = $1[0m  [["room_id", 1]]
+  Rendered rooms/index.html.erb within layouts/application (Duration: 138.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 258.7ms | GC: 0.0ms)
+Completed 200 OK in 270ms (Views: 137.8ms | ActiveRecord: 125.6ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started DELETE "/rooms/1" for 127.0.0.1 at 2025-10-24 21:35:44 +0700
+Processing by RoomsController#destroy as HTML
+  Parameters: {"authenticity_token" => "z_HyTI8pK67RtcPTwsoc_KxNDWN8l8ztFi0MZ2thm5VIz4bCMi9okOi8qB9qEvTGnPq8GG76yfgFoY7ZXAa7NQ", "id" => "1"}
+  [1m[36mRoom Load (27.9ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (37.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChat Load (26.3ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."room_id" = $1[0m  [["room_id", 1]]
+  [1m[36mChat Destroy (36.4ms)[0m  [1m[31mDELETE FROM "chats" WHERE "chats"."id" = $1[0m  [["id", 22]]
+  [1m[36mChat Destroy (32.1ms)[0m  [1m[31mDELETE FROM "chats" WHERE "chats"."id" = $1[0m  [["id", 23]]
+  [1m[36mChat Destroy (26.7ms)[0m  [1m[31mDELETE FROM "chats" WHERE "chats"."id" = $1[0m  [["id", 24]]
+  [1m[36mChat Destroy (263.8ms)[0m  [1m[31mDELETE FROM "chats" WHERE "chats"."id" = $1[0m  [["id", 25]]
+  [1m[36mChat Destroy (19.5ms)[0m  [1m[31mDELETE FROM "chats" WHERE "chats"."id" = $1[0m  [["id", 26]]
+  [1m[36mChat Destroy (21.0ms)[0m  [1m[31mDELETE FROM "chats" WHERE "chats"."id" = $1[0m  [["id", 27]]
+  [1m[36mChat Destroy (23.5ms)[0m  [1m[31mDELETE FROM "chats" WHERE "chats"."id" = $1[0m  [["id", 28]]
+  [1m[36mChat Destroy (30.7ms)[0m  [1m[31mDELETE FROM "chats" WHERE "chats"."id" = $1[0m  [["id", 29]]
+  [1m[36mChat Destroy (23.9ms)[0m  [1m[31mDELETE FROM "chats" WHERE "chats"."id" = $1[0m  [["id", 30]]
+  [1m[36mChat Destroy (24.5ms)[0m  [1m[31mDELETE FROM "chats" WHERE "chats"."id" = $1[0m  [["id", 31]]
+  [1m[36mRoom Destroy (23.8ms)[0m  [1m[31mDELETE FROM "rooms" WHERE "rooms"."id" = $1[0m  [["id", 1]]
+  [1m[36mTRANSACTION (21.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/rooms
+Completed 302 Found in 783ms (ActiveRecord: 638.2ms (13 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/rooms" for 127.0.0.1 at 2025-10-24 21:35:45 +0700
+Processing by RoomsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/index.html.erb within layouts/application
+  [1m[36mRoom Exists? (77.7ms)[0m  [1m[34mSELECT 1 AS one FROM "rooms" LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered rooms/index.html.erb within layouts/application (Duration: 86.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 268.2ms | GC: 0.3ms)
+Completed 200 OK in 282ms (Views: 202.3ms | ActiveRecord: 77.6ms (1 query, 0 cached) | GC: 0.5ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (63.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (300.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (29.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (24.6ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (39.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (47.7ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (6859.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "jlammtripkisyxhpxlpu"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (28.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (21.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (19.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (21.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (18.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (18.6ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (550.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "jlammtripkisyxhpxlpu"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (44.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (44.4ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (35.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (44.7ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (27.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (26.6ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (651.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "jlammtripkisyxhpxlpu"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (46.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (20.4ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (32.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (21.7ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (27.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (32.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (491.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "jlammtripkisyxhpxlpu"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (287.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (24.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (21.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (22.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (34.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (20.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (30.6ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (577.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "jlammtripkisyxhpxlpu"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (24.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (24.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (19.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (18.6ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (18.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (32.4ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (531.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "jlammtripkisyxhpxlpu"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (35.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (25.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (22.6ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (22.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (71.9ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (28.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (40.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (23.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (21.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (30.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (33.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (41.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (23.4ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+Started GET "/" for 127.0.0.1 at 2025-10-25 11:25:42 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (32.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RoomsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/index.html.erb within layouts/application
+  [1m[36mRoom Exists? (51.5ms)[0m  [1m[34mSELECT 1 AS one FROM "rooms" LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRoom Load (32.5ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  [1m[36mChat Count (22.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "chats" WHERE "chats"."room_id" = $1[0m  [["room_id", 3]]
+  Rendered rooms/index.html.erb within layouts/application (Duration: 635.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3268.1ms | GC: 0.0ms)
+Completed 200 OK in 7526ms (Views: 3055.7ms | ActiveRecord: 760.9ms (3 queries, 0 cached) | GC: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-10-25 11:25:52 +0700
+Processing by RoomsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/index.html.erb within layouts/application
+  [1m[36mRoom Exists? (53.3ms)[0m  [1m[34mSELECT 1 AS one FROM "rooms" LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRoom Load (36.3ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  [1m[36mChat Count (26.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "chats" WHERE "chats"."room_id" = $1[0m  [["room_id", 3]]
+  Rendered rooms/index.html.erb within layouts/application (Duration: 143.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 403.8ms | GC: 0.0ms)
+Completed 200 OK in 418ms (Views: 294.5ms | ActiveRecord: 116.3ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__1d06b52a_5c75_4bb1_a89f_b3976ef5caf9__0" for 127.0.0.1 at 2025-10-25 11:25:57 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__b7d9166e_9c24_40ab_9964_040e477d977e__1" for 127.0.0.1 at 2025-10-25 11:25:57 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__b72ef630_3bfe_42b2_9229_ebb4559b7f0d__2" for 127.0.0.1 at 2025-10-25 11:25:57 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__23222630_8a16_47aa_bf73_8ae8f2caf974__3" for 127.0.0.1 at 2025-10-25 11:25:58 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__e0fb5809_e64b_472a_89dc_6e76bd68284e__4" for 127.0.0.1 at 2025-10-25 11:25:58 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__473fa767_2dcf_43d8_a8cb_bb05b11af2a7__5" for 127.0.0.1 at 2025-10-25 11:25:58 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__55d6f69b_5011_4747_8d19_075d9f9681ac__0" for 127.0.0.1 at 2025-10-25 11:25:59 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__8ce62525_7bd9_45b8_983b_2c1cda4ec58e__1" for 127.0.0.1 at 2025-10-25 11:25:59 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__c444d4d9_eaf0_4cad_9ed0_1623caaa10d9__2" for 127.0.0.1 at 2025-10-25 11:25:59 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__43b85b15_97f8_41e1_84e4_b7af2735dc68__0" for 127.0.0.1 at 2025-10-25 11:26:01 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__37e77a46_560a_41a1_9fc9_8e8fa85edf0d__3" for 127.0.0.1 at 2025-10-25 11:26:01 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__96c0abd5_9a25_4341_99fc_981305e9b021__2" for 127.0.0.1 at 2025-10-25 11:26:01 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__b62e2880_a0a1_49b7_a1bf_314c4f92d4b9__1" for 127.0.0.1 at 2025-10-25 11:26:01 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__0bda1316_3a76_412a_954a_4659231689df__0" for 127.0.0.1 at 2025-10-25 11:26:01 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__cf97cb43_b3b8_43a7_9ee9_5bf35636fb99__5" for 127.0.0.1 at 2025-10-25 11:26:01 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__525db2cf_4bea_4227_8e8f_10a687282638__2" for 127.0.0.1 at 2025-10-25 11:26:01 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__7043371e_a58c_4b98_9d59_9b80a76d77f8__4" for 127.0.0.1 at 2025-10-25 11:26:01 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__29dbffb0_7a84_4898_a5f2_acfa6144f6f4__1" for 127.0.0.1 at 2025-10-25 11:26:01 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__76c94b97_43ef_4831_b511_c4ef7d7b3cef__0" for 127.0.0.1 at 2025-10-25 11:26:02 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__108916b5_fbd4_4712_9d78_da2edf95c8b5__2" for 127.0.0.1 at 2025-10-25 11:26:02 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__27db6f51_2644_4fd7_8498_97ebd520def7__1" for 127.0.0.1 at 2025-10-25 11:26:02 +0700
+Started GET "/rooms/3" for 127.0.0.1 at 2025-10-25 11:26:02 +0700
+Processing by RoomsController#show as HTML
+  Parameters: {"id" => "3"}
+  [1m[36mRoom Load (23.3ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/show.html.erb within layouts/application
+  [1m[36mChat Exists? (54.2ms)[0m  [1m[34mSELECT 1 AS one FROM "chats" WHERE "chats"."room_id" = $1 LIMIT $2[0m  [["room_id", 3], ["LIMIT", 1]]
+  [1m[36mChat Load (33.0ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."room_id" = $1 ORDER BY "chats"."created_at" ASC[0m  [["room_id", 3]]
+  Rendered rooms/show.html.erb within layouts/application (Duration: 215.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 424.9ms | GC: 0.0ms)
+Completed 200 OK in 778ms (Views: 378.1ms | ActiveRecord: 156.9ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-10-25 11:26:30 +0700
+Processing by RoomsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/index.html.erb within layouts/application
+  [1m[36mRoom Exists? (53.5ms)[0m  [1m[34mSELECT 1 AS one FROM "rooms" LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRoom Load (33.8ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  [1m[36mChat Count (21.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "chats" WHERE "chats"."room_id" = $1[0m  [["room_id", 3]]
+  Rendered rooms/index.html.erb within layouts/application (Duration: 116.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 172.9ms | GC: 0.0ms)
+Completed 200 OK in 176ms (Views: 65.9ms | ActiveRecord: 108.8ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__b9175c24_4b04_4db8_bcee_f7ecf45c5712__0" for 127.0.0.1 at 2025-10-25 11:26:31 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__a4754618_536b_420e_9ddd_46a6e71f551e__1" for 127.0.0.1 at 2025-10-25 11:26:31 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__73499c60_18ee_4a58_a402_33a573aca559__2" for 127.0.0.1 at 2025-10-25 11:26:31 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__d7aa9f22_e443_400a_89c5_9f24afab99a3__3" for 127.0.0.1 at 2025-10-25 11:26:32 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__d9423124_6c03_4368_9955_f80690f8cfb3__4" for 127.0.0.1 at 2025-10-25 11:26:32 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__7b43973e_8b45_403e_92b0_ace600ba248c__5" for 127.0.0.1 at 2025-10-25 11:26:32 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__1dd014cd_0732_4644_92fd_6cbd4c48d02a__0" for 127.0.0.1 at 2025-10-25 11:26:33 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__9b07ec21_2ba6_4130_b74d_e9b80d8cb29d__1" for 127.0.0.1 at 2025-10-25 11:26:33 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__732d647c_9afe_4e8d_9a8d_e2cd19f52067__2" for 127.0.0.1 at 2025-10-25 11:26:33 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__d87bbeed_ccdd_479f_bae4_51f0f8cc92d5__0" for 127.0.0.1 at 2025-10-25 11:26:34 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__ded2ad74_ab48_458e_8123_b149afaf4ff7__1" for 127.0.0.1 at 2025-10-25 11:26:34 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__b0d96c96_c740_4930_8eaf_cf9dd4bd5f0a__2" for 127.0.0.1 at 2025-10-25 11:26:34 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__e401d551_db4d_44f9_bf9b_ffbb615631f7__0" for 127.0.0.1 at 2025-10-25 11:26:34 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__2760c088_5080_45cd_b991_24214b08d500__1" for 127.0.0.1 at 2025-10-25 11:26:34 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__f4aa13d3_d04a_49d8_8e6c_089d42173fbc__2" for 127.0.0.1 at 2025-10-25 11:26:34 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__c7395fec_ed94_4470_a559_c8d807fe9765__0" for 127.0.0.1 at 2025-10-25 11:26:34 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__29a3c2b7_dd04_40e4_9774_6e42d905e4e1__1" for 127.0.0.1 at 2025-10-25 11:26:34 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__2baa9597_5558_4dcf_b12d_877bbc280b50__2" for 127.0.0.1 at 2025-10-25 11:26:34 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__a316611d_ddb0_4c2f_bf89_60edca02445c__0" for 127.0.0.1 at 2025-10-25 11:26:34 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__d7fa27a2_8a11_447f_9220_166890d5903a__1" for 127.0.0.1 at 2025-10-25 11:26:34 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__8b14cf6b_0f2e_4dc9_82ce_f071017e0d9c__2" for 127.0.0.1 at 2025-10-25 11:26:34 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__5d79355c_06b6_401d_b7f6_83a4a9576923__0" for 127.0.0.1 at 2025-10-25 11:26:35 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__c0954209_771c_495a_8de8_dc5f4b01e6c0__1" for 127.0.0.1 at 2025-10-25 11:26:35 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__3fb0abe5_df47_488c_b91d_6023a81083ed__2" for 127.0.0.1 at 2025-10-25 11:26:35 +0700
+Started GET "/" for 127.0.0.1 at 2025-10-25 11:26:36 +0700
+Processing by RoomsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/index.html.erb within layouts/application
+  [1m[36mRoom Exists? (64.5ms)[0m  [1m[34mSELECT 1 AS one FROM "rooms" LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRoom Load (23.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  [1m[36mChat Count (22.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "chats" WHERE "chats"."room_id" = $1[0m  [["room_id", 3]]
+  Rendered rooms/index.html.erb within layouts/application (Duration: 120.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 232.9ms | GC: 0.0ms)
+Completed 200 OK in 240ms (Views: 128.9ms | ActiveRecord: 109.9ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/rooms/3" for 127.0.0.1 at 2025-10-25 11:26:39 +0700
+Processing by RoomsController#show as HTML
+  Parameters: {"id" => "3"}
+  [1m[36mRoom Load (32.7ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/show.html.erb within layouts/application
+  [1m[36mChat Exists? (42.7ms)[0m  [1m[34mSELECT 1 AS one FROM "chats" WHERE "chats"."room_id" = $1 LIMIT $2[0m  [["room_id", 3], ["LIMIT", 1]]
+  [1m[36mChat Load (21.0ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."room_id" = $1 ORDER BY "chats"."created_at" ASC[0m  [["room_id", 3]]
+  Rendered rooms/show.html.erb within layouts/application (Duration: 68.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 110.1ms | GC: 0.0ms)
+Completed 200 OK in 169ms (Views: 47.9ms | ActiveRecord: 96.4ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/rooms/3" for 127.0.0.1 at 2025-10-25 11:26:41 +0700
+Processing by RoomsController#show as HTML
+  Parameters: {"id" => "3"}
+  [1m[36mRoom Load (21.6ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/show.html.erb within layouts/application
+  [1m[36mChat Exists? (66.9ms)[0m  [1m[34mSELECT 1 AS one FROM "chats" WHERE "chats"."room_id" = $1 LIMIT $2[0m  [["room_id", 3], ["LIMIT", 1]]
+  [1m[36mChat Load (21.3ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."room_id" = $1 ORDER BY "chats"."created_at" ASC[0m  [["room_id", 3]]
+  Rendered rooms/show.html.erb within layouts/application (Duration: 92.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 147.3ms | GC: 0.0ms)
+Completed 200 OK in 198ms (Views: 60.6ms | ActiveRecord: 109.7ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-10-25 11:29:13 +0700
+Started GET "/rooms/3" for 127.0.0.1 at 2025-10-25 11:36:04 +0700
+Started GET "/rooms/3" for 127.0.0.1 at 2025-10-25 11:36:04 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (33.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RoomsController#show as HTML
+  Parameters: {"id" => "3"}
+Processing by RoomsController#show as HTML
+  Parameters: {"id" => "3"}
+  [1m[36mRoom Load (21.4ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mRoom Load (24.9ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/show.html.erb within layouts/application
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/show.html.erb within layouts/application
+  [1m[36mChat Exists? (92.8ms)[0m  [1m[34mSELECT 1 AS one FROM "chats" WHERE "chats"."room_id" = $1 LIMIT $2[0m  [["room_id", 3], ["LIMIT", 1]]
+  [1m[36mChat Exists? (96.5ms)[0m  [1m[34mSELECT 1 AS one FROM "chats" WHERE "chats"."room_id" = $1 LIMIT $2[0m  [["room_id", 3], ["LIMIT", 1]]
+  [1m[36mChat Load (22.3ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."room_id" = $1 ORDER BY "chats"."created_at" ASC[0m  [["room_id", 3]]
+  [1m[36mChat Load (32.7ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."room_id" = $1 ORDER BY "chats"."created_at" ASC[0m  [["room_id", 3]]
+  Rendered rooms/show.html.erb within layouts/application (Duration: 192.0ms | GC: 0.0ms)
+  Rendered rooms/show.html.erb within layouts/application (Duration: 195.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3585.3ms | GC: 0.2ms)
+Completed 500 Internal Server Error in 9197ms (ActiveRecord: 2163.0ms (3 queries, 0 cached) | GC: 993.3ms)
+
+
+  
+ActionView::Template::Error (Permission denied @ rb_file_s_rename - (C:/Users/fauza/OneDrive/Desktop/Apply/rubychatapp/tmp/cache/assets/sprockets/v4.0.0/pv/pv6tV3CDkIAmLXdU8EPLlNEkXAKJPufVD4VP30o4fWo.cache.6976.16576.39968, C:/Users/fauza/OneDrive/Desktop/Apply/rubychatapp/tmp/cache/assets/sprockets/v4.0.0/pv/pv6tV3CDkIAmLXdU8EPLlNEkXAKJPufVD4VP30o4fWo.cache)):
+
+Causes:
+Errno::EACCES (Permission denied @ rb_file_s_rename - (C:/Users/fauza/OneDrive/Desktop/Apply/rubychatapp/tmp/cache/assets/sprockets/v4.0.0/pv/pv6tV3CDkIAmLXdU8EPLlNEkXAKJPufVD4VP30o4fWo.cache.6976.16576.39968, C:/Users/fauza/OneDrive/Desktop/Apply/rubychatapp/tmp/cache/assets/sprockets/v4.0.0/pv/pv6tV3CDkIAmLXdU8EPLlNEkXAKJPufVD4VP30o4fWo.cache))
+  
+sprockets (4.2.2) lib/sprockets/path_utils.rb:362:in 'File.rename'
+sprockets (4.2.2) lib/sprockets/path_utils.rb:362:in 'Sprockets::PathUtils#atomic_write'
+sprockets (4.2.2) lib/sprockets/cache/file_store.rb:112:in 'Sprockets::Cache::FileStore#set'
+sprockets (4.2.2) lib/sprockets/cache.rb:227:in 'Sprockets::Cache::GetWrapper#set'
+sprockets (4.2.2) lib/sprockets/cache.rb:143:in 'Sprockets::Cache#set'
+sprockets (4.2.2) lib/sprockets/loader.rb:343:in 'Sprockets::Loader#fetch_asset_from_dependency_cache'
+sprockets (4.2.2) lib/sprockets/loader.rb:43:in 'Sprockets::Loader#load'
+sprockets (4.2.2) lib/sprockets/cached_environment.rb:44:in 'block in Sprockets::CachedEnvironment#load'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/map.rb:207:in 'block in Concurrent::Map#fetch_or_store'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/map.rb:187:in 'Concurrent::Map#fetch'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/map.rb:206:in 'Concurrent::Map#fetch_or_store'
+sprockets (4.2.2) lib/sprockets/cached_environment.rb:44:in 'Sprockets::CachedEnvironment#load'
+sprockets (4.2.2) lib/sprockets/base.rb:81:in 'Sprockets::Base#find_asset'
+sprockets (4.2.2) lib/sprockets/base.rb:88:in 'Sprockets::Base#find_all_linked_assets'
+sprockets (4.2.2) lib/sprockets/manifest.rb:125:in 'Enumerator#each'
+sprockets (4.2.2) lib/sprockets/manifest.rb:125:in 'Enumerable#to_a'
+sprockets (4.2.2) lib/sprockets/manifest.rb:125:in 'block (2 levels) in Sprockets::Manifest#find'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:24:in 'block in Concurrent::SafeTaskExecutor#execute'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in 'block in Concurrent::Synchronization::MutexLockableObject#synchronize'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in 'Thread::Mutex#synchronize'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in 'Concurrent::Synchronization::MutexLockableObject#synchronize'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:22:in 'Concurrent::SafeTaskExecutor#execute'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/promise.rb:564:in 'block in Concurrent::Promise#realize'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:359:in 'Concurrent::RubyThreadPoolExecutor::Worker#run_task'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:350:in 'block (3 levels) in Concurrent::RubyThreadPoolExecutor::Worker#create_worker'
+<internal:kernel>:168:in 'Kernel#loop'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:341:in 'block (2 levels) in Concurrent::RubyThreadPoolExecutor::Worker#create_worker'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:340:in 'Kernel#catch'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:340:in 'block in Concurrent::RubyThreadPoolExecutor::Worker#create_worker'
+  Rendered layout layouts/application.html.erb (Duration: 4397.9ms | GC: 991.4ms)
+Completed 200 OK in 10028ms (Views: 4317.9ms | ActiveRecord: 2223.4ms (3 queries, 0 cached) | GC: 1984.5ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-10-25 11:36:17 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__e669c44f_72fc_44fe_a83c_f1b32f1052a0__0" for 127.0.0.1 at 2025-10-25 11:36:18 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__427f0bb5_09cc_46f8_a99c_795faa27751d__1" for 127.0.0.1 at 2025-10-25 11:36:18 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__15f05aa0_f761_4955_b235_7ae3bf6dd892__2" for 127.0.0.1 at 2025-10-25 11:36:18 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__c9dd9af8_5124_44ea_b215_47f5823cdb40__3" for 127.0.0.1 at 2025-10-25 11:36:18 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__2a7f303c_cd2d_495f_a4e3_5cb31c8e136a__4" for 127.0.0.1 at 2025-10-25 11:36:18 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__d8afb17b_327d_4706_bc1b_2366f823ed5b__5" for 127.0.0.1 at 2025-10-25 11:36:18 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__d8481a9f_4e38_4024_9177_ce778a20d5f1__0" for 127.0.0.1 at 2025-10-25 11:36:20 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__a50a11df_d5ec_4890_a9f4_cef60625002a__1" for 127.0.0.1 at 2025-10-25 11:36:20 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__2dcbf947_7f29_4238_8671_297212247cb2__2" for 127.0.0.1 at 2025-10-25 11:36:20 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__b0b132cd_f82e_430d_b1b0_89315e390497__0" for 127.0.0.1 at 2025-10-25 11:36:20 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__7e2b6b44_f22c_41d3_8835_03d00dc1b97c__1" for 127.0.0.1 at 2025-10-25 11:36:20 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__78198916_6e5f_406b_88ae_f603ebcf2069__2" for 127.0.0.1 at 2025-10-25 11:36:20 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__e7423ee6_a08a_406d_95e5_69271a191f72__0" for 127.0.0.1 at 2025-10-25 11:36:20 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__f84b4648_77ec_4b79_9504_9fee30ae6fa3__1" for 127.0.0.1 at 2025-10-25 11:36:20 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__c625b38e_cecf_4a99_bffd_6738282a27be__2" for 127.0.0.1 at 2025-10-25 11:36:20 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__4113f188_a514_4022_ae3d_ed20db376b58__0" for 127.0.0.1 at 2025-10-25 11:36:20 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__1a44dff2_4a69_415e_a5f4_6ada1aeca790__1" for 127.0.0.1 at 2025-10-25 11:36:20 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__f36afa5a_373f_48bb_b7bd_aa7a3375789a__2" for 127.0.0.1 at 2025-10-25 11:36:20 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__7ce57cdc_8f63_49a0_b4c5_a8e21c42d82e__0" for 127.0.0.1 at 2025-10-25 11:36:20 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__78323501_6534_41c0_994a_4a4786e48e5e__1" for 127.0.0.1 at 2025-10-25 11:36:20 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__94dad11d_cb70_4660_bb17_626d01c10396__2" for 127.0.0.1 at 2025-10-25 11:36:20 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__4f90aa3e_049f_461b_9c3f_37f109287a81__0" for 127.0.0.1 at 2025-10-25 11:36:20 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__ad3c9e4e_2a4e_44c8_89ac_24e0bde0f2fb__1" for 127.0.0.1 at 2025-10-25 11:36:20 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__a87589e7_411e_4636_88ef_cf3b94121d98__2" for 127.0.0.1 at 2025-10-25 11:36:21 +0700
+Started GET "/rooms/3" for 127.0.0.1 at 2025-10-25 11:36:26 +0700
+Processing by RoomsController#show as HTML
+  Parameters: {"id" => "3"}
+  [1m[36mRoom Load (52.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/show.html.erb within layouts/application
+  [1m[36mChat Exists? (46.3ms)[0m  [1m[34mSELECT 1 AS one FROM "chats" WHERE "chats"."room_id" = $1 LIMIT $2[0m  [["room_id", 3], ["LIMIT", 1]]
+  [1m[36mChat Load (86.9ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."room_id" = $1 ORDER BY "chats"."created_at" ASC[0m  [["room_id", 3]]
+  Rendered rooms/show.html.erb within layouts/application (Duration: 137.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 211.7ms | GC: 0.0ms)
+Completed 200 OK in 296ms (Views: 80.1ms | ActiveRecord: 185.3ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-10-25 11:36:26 +0700
+Started POST "/rooms/3/chats.json" for 127.0.0.1 at 2025-10-25 11:36:45 +0700
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8" => "✓", "authenticity_token" => "ZLVhlEtpu3K9lmPs0c1v4T7XQG7WgM7UsZmNlO7Pv3NjOlRHR_LVUDKzclptioBcEvYgRcZTELdEj_qXQizagg", "chat" => {"message" => "test", "username" => "ada aja"}, "room_id" => "3"}
+  [1m[36mRoom Load (21.3ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (20.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChat Create (43.8ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at", "room_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["message", "test"], ["username", "ada aja"], ["created_at", "2025-10-25 04:36:45.090100"], ["updated_at", "2025-10-25 04:36:45.090100"], ["room_id", 3]]
+  [1m[36mTRANSACTION (22.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 829ms (Views: 0.2ms | ActiveRecord: 108.0ms (2 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-10-25 11:37:05 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (25.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (24.8ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (21.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (32.8ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (21.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (26.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (30.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (20.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (22.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (19.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (24.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (20.8ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (54.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (25.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (33.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (49.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (30.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (75.7ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (21.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (18.9ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (46.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (29.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (31.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (22.6ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (57.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (49.7ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (19.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (20.7ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (19.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (22.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (537.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "jlammtripkisyxhpxlpu"[0m
+Started GET "/rooms/3" for 127.0.0.1 at 2025-10-25 14:52:29 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (29.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RoomsController#show as HTML
+  Parameters: {"id" => "3"}
+  [1m[36mRoom Load (24.4ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/show.html.erb within layouts/application
+  [1m[36mChat Exists? (49.2ms)[0m  [1m[34mSELECT 1 AS one FROM "chats" WHERE "chats"."room_id" = $1 LIMIT $2[0m  [["room_id", 3], ["LIMIT", 1]]
+  [1m[36mChat Load (20.0ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."room_id" = $1 ORDER BY "chats"."created_at" ASC[0m  [["room_id", 3]]
+  Rendered rooms/show.html.erb within layouts/application (Duration: 119.5ms | GC: 0.0ms)
+Started GET "/rooms" for 127.0.0.1 at 2025-10-25 14:52:47 +0700
+Processing by RoomsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/index.html.erb within layouts/application
+  [1m[36mRoom Exists? (43.1ms)[0m  [1m[34mSELECT 1 AS one FROM "rooms" LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRoom Load (21.0ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  [1m[36mChat Count (34.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "chats" WHERE "chats"."room_id" = $1[0m  [["room_id", 3]]
+  Rendered rooms/index.html.erb within layouts/application (Duration: 117.6ms | GC: 0.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 10820.8ms | GC: 0.2ms)
+Completed 500 Internal Server Error in 18652ms (ActiveRecord: 1056.7ms (3 queries, 0 cached) | GC: 2.2ms)
+
+
+  
+ActionView::Template::Error (Permission denied @ rb_file_s_rename - (C:/Users/fauza/OneDrive/Desktop/Apply/rubychatapp/tmp/cache/assets/sprockets/v4.0.0/9q/9qroWRLNr7ztjPb107V1FFN-ZwivRXgWtkgb-V22pJ8.cache.6960.14672.995545, C:/Users/fauza/OneDrive/Desktop/Apply/rubychatapp/tmp/cache/assets/sprockets/v4.0.0/9q/9qroWRLNr7ztjPb107V1FFN-ZwivRXgWtkgb-V22pJ8.cache)):
+
+Causes:
+Errno::EACCES (Permission denied @ rb_file_s_rename - (C:/Users/fauza/OneDrive/Desktop/Apply/rubychatapp/tmp/cache/assets/sprockets/v4.0.0/9q/9qroWRLNr7ztjPb107V1FFN-ZwivRXgWtkgb-V22pJ8.cache.6960.14672.995545, C:/Users/fauza/OneDrive/Desktop/Apply/rubychatapp/tmp/cache/assets/sprockets/v4.0.0/9q/9qroWRLNr7ztjPb107V1FFN-ZwivRXgWtkgb-V22pJ8.cache))
+  
+sprockets (4.2.2) lib/sprockets/path_utils.rb:362:in 'File.rename'
+sprockets (4.2.2) lib/sprockets/path_utils.rb:362:in 'Sprockets::PathUtils#atomic_write'
+sprockets (4.2.2) lib/sprockets/cache/file_store.rb:112:in 'Sprockets::Cache::FileStore#set'
+sprockets (4.2.2) lib/sprockets/cache.rb:227:in 'Sprockets::Cache::GetWrapper#set'
+sprockets (4.2.2) lib/sprockets/cache.rb:143:in 'Sprockets::Cache#set'
+sprockets (4.2.2) lib/sprockets/loader.rb:343:in 'Sprockets::Loader#fetch_asset_from_dependency_cache'
+sprockets (4.2.2) lib/sprockets/loader.rb:43:in 'Sprockets::Loader#load'
+sprockets (4.2.2) lib/sprockets/cached_environment.rb:44:in 'block in Sprockets::CachedEnvironment#load'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/map.rb:207:in 'block in Concurrent::Map#fetch_or_store'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/map.rb:187:in 'Concurrent::Map#fetch'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/map.rb:206:in 'Concurrent::Map#fetch_or_store'
+sprockets (4.2.2) lib/sprockets/cached_environment.rb:44:in 'Sprockets::CachedEnvironment#load'
+sprockets (4.2.2) lib/sprockets/bundle.rb:41:in 'block in Sprockets::Bundle.call'
+sprockets (4.2.2) lib/sprockets/utils.rb:175:in 'Sprockets::Utils#dfs'
+sprockets (4.2.2) lib/sprockets/bundle.rb:42:in 'Sprockets::Bundle.call'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:84:in 'Sprockets::ProcessorUtils#call_processor'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:66:in 'block in Sprockets::ProcessorUtils#call_processors'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:65:in 'Array#reverse_each'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:65:in 'Sprockets::ProcessorUtils#call_processors'
+sprockets (4.2.2) lib/sprockets/loader.rb:184:in 'Sprockets::Loader#load_from_unloaded'
+sprockets (4.2.2) lib/sprockets/loader.rb:59:in 'block in Sprockets::Loader#load'
+sprockets (4.2.2) lib/sprockets/loader.rb:339:in 'Sprockets::Loader#fetch_asset_from_dependency_cache'
+sprockets (4.2.2) lib/sprockets/loader.rb:43:in 'Sprockets::Loader#load'
+sprockets (4.2.2) lib/sprockets/cached_environment.rb:44:in 'block in Sprockets::CachedEnvironment#load'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/map.rb:207:in 'block in Concurrent::Map#fetch_or_store'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/map.rb:187:in 'Concurrent::Map#fetch'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/map.rb:206:in 'Concurrent::Map#fetch_or_store'
+sprockets (4.2.2) lib/sprockets/cached_environment.rb:44:in 'Sprockets::CachedEnvironment#load'
+sprockets (4.2.2) lib/sprockets/bundle.rb:32:in 'block in Sprockets::Bundle.call'
+C:/Ruby34-x64/lib/ruby/3.4.0/set.rb:504:in 'Hash#each_key'
+C:/Ruby34-x64/lib/ruby/3.4.0/set.rb:504:in 'Set#each'
+sprockets (4.2.2) lib/sprockets/bundle.rb:31:in 'Sprockets::Bundle.call'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:84:in 'Sprockets::ProcessorUtils#call_processor'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:66:in 'block in Sprockets::ProcessorUtils#call_processors'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:65:in 'Array#reverse_each'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:65:in 'Sprockets::ProcessorUtils#call_processors'
+sprockets (4.2.2) lib/sprockets/loader.rb:184:in 'Sprockets::Loader#load_from_unloaded'
+sprockets (4.2.2) lib/sprockets/loader.rb:59:in 'block in Sprockets::Loader#load'
+sprockets (4.2.2) lib/sprockets/loader.rb:339:in 'Sprockets::Loader#fetch_asset_from_dependency_cache'
+sprockets (4.2.2) lib/sprockets/loader.rb:43:in 'Sprockets::Loader#load'
+sprockets (4.2.2) lib/sprockets/cached_environment.rb:44:in 'block in Sprockets::CachedEnvironment#load'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/map.rb:207:in 'block in Concurrent::Map#fetch_or_store'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/map.rb:187:in 'Concurrent::Map#fetch'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/map.rb:206:in 'Concurrent::Map#fetch_or_store'
+sprockets (4.2.2) lib/sprockets/cached_environment.rb:44:in 'Sprockets::CachedEnvironment#load'
+sprockets (4.2.2) lib/sprockets/base.rb:81:in 'Sprockets::Base#find_asset'
+sprockets (4.2.2) lib/sprockets/base.rb:88:in 'Sprockets::Base#find_all_linked_assets'
+sprockets (4.2.2) lib/sprockets/manifest.rb:125:in 'Enumerator#each'
+sprockets (4.2.2) lib/sprockets/manifest.rb:125:in 'Enumerable#to_a'
+sprockets (4.2.2) lib/sprockets/manifest.rb:125:in 'block (2 levels) in Sprockets::Manifest#find'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:24:in 'block in Concurrent::SafeTaskExecutor#execute'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in 'block in Concurrent::Synchronization::MutexLockableObject#synchronize'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in 'Thread::Mutex#synchronize'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in 'Concurrent::Synchronization::MutexLockableObject#synchronize'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:22:in 'Concurrent::SafeTaskExecutor#execute'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/promise.rb:564:in 'block in Concurrent::Promise#realize'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:359:in 'Concurrent::RubyThreadPoolExecutor::Worker#run_task'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:350:in 'block (3 levels) in Concurrent::RubyThreadPoolExecutor::Worker#create_worker'
+<internal:kernel>:168:in 'Kernel#loop'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:341:in 'block (2 levels) in Concurrent::RubyThreadPoolExecutor::Worker#create_worker'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:340:in 'Kernel#catch'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:340:in 'block in Concurrent::RubyThreadPoolExecutor::Worker#create_worker'
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-10-25 14:52:50 +0700
+  Rendered layout layouts/application.html.erb (Duration: 2364.6ms | GC: 2.2ms)
+Completed 200 OK in 2502ms (Views: 2269.1ms | ActiveRecord: 98.1ms (3 queries, 0 cached) | GC: 2.2ms)
+
+
+Started GET "/rooms/3" for 127.0.0.1 at 2025-10-25 14:52:52 +0700
+Processing by RoomsController#show as HTML
+  Parameters: {"id" => "3"}
+  [1m[36mRoom Load (32.5ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/show.html.erb within layouts/application
+  [1m[36mChat Exists? (43.2ms)[0m  [1m[34mSELECT 1 AS one FROM "chats" WHERE "chats"."room_id" = $1 LIMIT $2[0m  [["room_id", 3], ["LIMIT", 1]]
+  [1m[36mChat Load (20.4ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."room_id" = $1 ORDER BY "chats"."created_at" ASC[0m  [["room_id", 3]]
+  Rendered rooms/show.html.erb within layouts/application (Duration: 68.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 122.6ms | GC: 0.0ms)
+Completed 200 OK in 180ms (Views: 60.4ms | ActiveRecord: 96.0ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-10-25 14:52:53 +0700
+Started GET "/rooms" for 127.0.0.1 at 2025-10-25 14:52:56 +0700
+Processing by RoomsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/index.html.erb within layouts/application
+  [1m[36mRoom Exists? (49.0ms)[0m  [1m[34mSELECT 1 AS one FROM "rooms" LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRoom Load (33.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  [1m[36mChat Count (24.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "chats" WHERE "chats"."room_id" = $1[0m  [["room_id", 3]]
+  Rendered rooms/index.html.erb within layouts/application (Duration: 112.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 153.1ms | GC: 0.0ms)
+Completed 200 OK in 155ms (Views: 47.3ms | ActiveRecord: 107.1ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/rooms" for 127.0.0.1 at 2025-10-25 14:53:04 +0700
+Processing by RoomsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/index.html.erb within layouts/application
+  [1m[36mRoom Exists? (76.7ms)[0m  [1m[34mSELECT 1 AS one FROM "rooms" LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRoom Load (522.8ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  [1m[36mChat Count (28.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "chats" WHERE "chats"."room_id" = $1[0m  [["room_id", 3]]
+  Rendered rooms/index.html.erb within layouts/application (Duration: 635.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 717.8ms | GC: 0.0ms)
+Completed 200 OK in 723ms (Views: 93.4ms | ActiveRecord: 627.6ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/rooms" for 127.0.0.1 at 2025-10-25 14:53:05 +0700
+Processing by RoomsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/index.html.erb within layouts/application
+  [1m[36mRoom Exists? (39.1ms)[0m  [1m[34mSELECT 1 AS one FROM "rooms" LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRoom Load (20.0ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  [1m[36mChat Count (44.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "chats" WHERE "chats"."room_id" = $1[0m  [["room_id", 3]]
+  Rendered rooms/index.html.erb within layouts/application (Duration: 112.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 195.0ms | GC: 0.0ms)
+Completed 200 OK in 199ms (Views: 93.9ms | ActiveRecord: 103.6ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-10-25 14:53:05 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__21f473b3_683e_48d5_bac9_9c3ed9bcded5__0" for 127.0.0.1 at 2025-10-25 14:53:06 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__bb9303ba_e1dc_47fa_b2d3_e43e15a0256e__1" for 127.0.0.1 at 2025-10-25 14:53:06 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__45324fe0_6331_4602_bd90_0729f5092a01__2" for 127.0.0.1 at 2025-10-25 14:53:06 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__d55b3cef_b354_440f_937d_f0064fe5e52b__3" for 127.0.0.1 at 2025-10-25 14:53:06 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__e1d1b6d0_d368_4191_807c_f5e78ab864f9__4" for 127.0.0.1 at 2025-10-25 14:53:07 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__73349432_b16a_403f_baf5_e448ee57575a__5" for 127.0.0.1 at 2025-10-25 14:53:07 +0700
+Started GET "/rooms/3" for 127.0.0.1 at 2025-10-25 14:53:10 +0700
+Processing by RoomsController#show as HTML
+  Parameters: {"id" => "3"}
+  [1m[36mRoom Load (28.0ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/show.html.erb within layouts/application
+  [1m[36mChat Exists? (45.0ms)[0m  [1m[34mSELECT 1 AS one FROM "chats" WHERE "chats"."room_id" = $1 LIMIT $2[0m  [["room_id", 3], ["LIMIT", 1]]
+  [1m[36mChat Load (54.8ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."room_id" = $1 ORDER BY "chats"."created_at" ASC[0m  [["room_id", 3]]
+  Rendered rooms/show.html.erb within layouts/application (Duration: 107.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 315.4ms | GC: 0.0ms)
+Completed 200 OK in 373ms (Views: 218.3ms | ActiveRecord: 127.6ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/rooms/3" for 127.0.0.1 at 2025-10-25 14:53:32 +0700
+Processing by RoomsController#show as HTML
+  Parameters: {"id" => "3"}
+  [1m[36mRoom Load (18.9ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/show.html.erb within layouts/application
+  [1m[36mChat Exists? (83.3ms)[0m  [1m[34mSELECT 1 AS one FROM "chats" WHERE "chats"."room_id" = $1 LIMIT $2[0m  [["room_id", 3], ["LIMIT", 1]]
+  [1m[36mChat Load (18.9ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."room_id" = $1 ORDER BY "chats"."created_at" ASC[0m  [["room_id", 3]]
+  Rendered rooms/show.html.erb within layouts/application (Duration: 108.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 181.4ms | GC: 0.0ms)
+Completed 200 OK in 226ms (Views: 80.9ms | ActiveRecord: 120.9ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-10-25 14:53:32 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__72a466b6_67b1_439d_ac55_8a8568c35dde__0" for 127.0.0.1 at 2025-10-25 14:53:32 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__a34fcac0_d7cd_4ffa_b959_877ab9725329__1" for 127.0.0.1 at 2025-10-25 14:53:33 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__08e787c0_9135_470d_81b6_aa777ef32033__2" for 127.0.0.1 at 2025-10-25 14:53:33 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__c3c7db8d_ee42_4912_af4b_223c004e2ea6__3" for 127.0.0.1 at 2025-10-25 14:53:33 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__eac758ba_c6a4_4341_a5e9_12af7e5da2fa__4" for 127.0.0.1 at 2025-10-25 14:53:33 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__51bc4d1a_8c86_4b2e_84d0_e3ac4df510a5__5" for 127.0.0.1 at 2025-10-25 14:53:33 +0700
+Started GET "/rooms/3" for 127.0.0.1 at 2025-10-25 14:53:47 +0700
+Processing by RoomsController#show as HTML
+  Parameters: {"id" => "3"}
+  [1m[36mRoom Load (21.6ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/show.html.erb within layouts/application
+  [1m[36mChat Exists? (38.8ms)[0m  [1m[34mSELECT 1 AS one FROM "chats" WHERE "chats"."room_id" = $1 LIMIT $2[0m  [["room_id", 3], ["LIMIT", 1]]
+  [1m[36mChat Load (20.1ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."room_id" = $1 ORDER BY "chats"."created_at" ASC[0m  [["room_id", 3]]
+  Rendered rooms/show.html.erb within layouts/application (Duration: 64.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 127.1ms | GC: 0.0ms)
+Completed 200 OK in 182ms (Views: 69.8ms | ActiveRecord: 80.4ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/rooms/3" for 127.0.0.1 at 2025-10-25 14:53:53 +0700
+Processing by RoomsController#show as HTML
+  Parameters: {"id" => "3"}
+  [1m[36mRoom Load (20.0ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/show.html.erb within layouts/application
+  [1m[36mChat Exists? (53.5ms)[0m  [1m[34mSELECT 1 AS one FROM "chats" WHERE "chats"."room_id" = $1 LIMIT $2[0m  [["room_id", 3], ["LIMIT", 1]]
+  [1m[36mChat Load (25.1ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."room_id" = $1 ORDER BY "chats"."created_at" ASC[0m  [["room_id", 3]]
+  Rendered rooms/show.html.erb within layouts/application (Duration: 84.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 142.1ms | GC: 0.0ms)
+Completed 200 OK in 205ms (Views: 64.9ms | ActiveRecord: 98.5ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-10-25 14:53:54 +0700
+Started GET "/rooms" for 127.0.0.1 at 2025-10-25 14:54:06 +0700
+Processing by RoomsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/index.html.erb within layouts/application
+  [1m[36mRoom Exists? (48.7ms)[0m  [1m[34mSELECT 1 AS one FROM "rooms" LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRoom Load (20.9ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  [1m[36mChat Count (19.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "chats" WHERE "chats"."room_id" = $1[0m  [["room_id", 3]]
+  Rendered rooms/index.html.erb within layouts/application (Duration: 96.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 162.7ms | GC: 0.0ms)
+Completed 200 OK in 166ms (Views: 75.4ms | ActiveRecord: 89.1ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/rooms/3" for 127.0.0.1 at 2025-10-25 14:54:07 +0700
+Processing by RoomsController#show as HTML
+  Parameters: {"id" => "3"}
+  [1m[36mRoom Load (19.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/show.html.erb within layouts/application
+  [1m[36mChat Exists? (77.1ms)[0m  [1m[34mSELECT 1 AS one FROM "chats" WHERE "chats"."room_id" = $1 LIMIT $2[0m  [["room_id", 3], ["LIMIT", 1]]
+  [1m[36mChat Load (264.4ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."room_id" = $1 ORDER BY "chats"."created_at" ASC[0m  [["room_id", 3]]
+  Rendered rooms/show.html.erb within layouts/application (Duration: 346.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 476.4ms | GC: 0.0ms)
+Completed 200 OK in 527ms (Views: 136.9ms | ActiveRecord: 360.7ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-10-25 14:54:38 +0700
+Processing by RoomsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/index.html.erb within layouts/application
+  [1m[36mRoom Exists? (67.9ms)[0m  [1m[34mSELECT 1 AS one FROM "rooms" LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRoom Load (19.3ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  [1m[36mChat Count (31.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "chats" WHERE "chats"."room_id" = $1[0m  [["room_id", 3]]
+  Rendered rooms/index.html.erb within layouts/application (Duration: 125.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 186.9ms | GC: 0.0ms)
+Completed 200 OK in 190ms (Views: 70.7ms | ActiveRecord: 118.1ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-10-25 14:54:38 +0700
+Started GET "/" for 127.0.0.1 at 2025-10-25 15:16:53 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (27.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RoomsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/index.html.erb within layouts/application
+  [1m[36mRoom Exists? (45.6ms)[0m  [1m[34mSELECT 1 AS one FROM "rooms" LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRoom Load (19.8ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  [1m[36mChat Count (24.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "chats" WHERE "chats"."room_id" = $1[0m  [["room_id", 3]]
+  Rendered rooms/index.html.erb within layouts/application (Duration: 307.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5512.6ms | GC: 0.2ms)
+Completed 200 OK in 11226ms (Views: 5373.2ms | ActiveRecord: 499.7ms (3 queries, 0 cached) | GC: 3.3ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-10-25 15:17:06 +0700
+Started GET "/rooms/3" for 127.0.0.1 at 2025-10-25 15:17:15 +0700
+Processing by RoomsController#show as HTML
+  Parameters: {"id" => "3"}
+  [1m[36mRoom Load (17.9ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/show.html.erb within layouts/application
+  [1m[36mChat Exists? (52.4ms)[0m  [1m[34mSELECT 1 AS one FROM "chats" WHERE "chats"."room_id" = $1 LIMIT $2[0m  [["room_id", 3], ["LIMIT", 1]]
+  [1m[36mChat Load (27.9ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."room_id" = $1 ORDER BY "chats"."created_at" ASC[0m  [["room_id", 3]]
+  Rendered rooms/show.html.erb within layouts/application (Duration: 133.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 394.3ms | GC: 0.0ms)
+Completed 200 OK in 528ms (Views: 319.8ms | ActiveRecord: 116.5ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/rooms/3/chats.json" for 127.0.0.1 at 2025-10-25 15:17:26 +0700
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8" => "✓", "authenticity_token" => "BpJlsrz3qK8Pl6r8tyGsWJOAGlGcQStvccqNPu6R5_5VxhZgaWstkpOMrvz-pbNlTniuGNOk_21e_c-CsDBqGQ", "chat" => {"message" => "hay", "username" => "test"}, "room_id" => "3"}
+  [1m[36mRoom Load (19.0ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (17.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChat Create (59.9ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at", "room_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["message", "hay"], ["username", "test"], ["created_at", "2025-10-25 08:17:26.332397"], ["updated_at", "2025-10-25 08:17:26.332397"], ["room_id", 3]]
+  [1m[36mTRANSACTION (65.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 618ms (Views: 0.3ms | ActiveRecord: 161.7ms (2 queries, 0 cached) | GC: 0.2ms)
+
+
+Started POST "/rooms/3/chats.json" for 127.0.0.1 at 2025-10-25 15:17:27 +0700
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8" => "✓", "authenticity_token" => "BpJlsrz3qK8Pl6r8tyGsWJOAGlGcQStvccqNPu6R5_5VxhZgaWstkpOMrvz-pbNlTniuGNOk_21e_c-CsDBqGQ", "chat" => {"message" => "hay", "username" => "test"}, "room_id" => "3"}
+  [1m[36mRoom Load (18.3ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (19.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChat Create (38.0ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at", "room_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["message", "hay"], ["username", "test"], ["created_at", "2025-10-25 08:17:27.416922"], ["updated_at", "2025-10-25 08:17:27.416922"], ["room_id", 3]]
+  [1m[36mTRANSACTION (20.7ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 138ms (Views: 0.1ms | ActiveRecord: 95.9ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/rooms/3/chats.json" for 127.0.0.1 at 2025-10-25 15:17:27 +0700
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8" => "✓", "authenticity_token" => "BpJlsrz3qK8Pl6r8tyGsWJOAGlGcQStvccqNPu6R5_5VxhZgaWstkpOMrvz-pbNlTniuGNOk_21e_c-CsDBqGQ", "chat" => {"message" => "hay", "username" => "test"}, "room_id" => "3"}
+  [1m[36mRoom Load (21.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (17.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChat Create (37.1ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at", "room_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["message", "hay"], ["username", "test"], ["created_at", "2025-10-25 08:17:27.702964"], ["updated_at", "2025-10-25 08:17:27.702964"], ["room_id", 3]]
+  [1m[36mTRANSACTION (21.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 153ms (Views: 0.1ms | ActiveRecord: 96.8ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/rooms/3/chats.json" for 127.0.0.1 at 2025-10-25 15:17:27 +0700
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8" => "✓", "authenticity_token" => "BpJlsrz3qK8Pl6r8tyGsWJOAGlGcQStvccqNPu6R5_5VxhZgaWstkpOMrvz-pbNlTniuGNOk_21e_c-CsDBqGQ", "chat" => {"message" => "hay", "username" => "test"}, "room_id" => "3"}
+  [1m[36mRoom Load (28.9ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (17.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChat Create (49.5ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at", "room_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["message", "hay"], ["username", "test"], ["created_at", "2025-10-25 08:17:27.986369"], ["updated_at", "2025-10-25 08:17:27.986369"], ["room_id", 3]]
+  [1m[36mTRANSACTION (37.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 184ms (Views: 0.2ms | ActiveRecord: 133.0ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/rooms/3" for 127.0.0.1 at 2025-10-25 15:17:31 +0700
+Processing by RoomsController#show as HTML
+  Parameters: {"id" => "3"}
+  [1m[36mRoom Load (64.6ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/show.html.erb within layouts/application
+  [1m[36mChat Exists? (36.0ms)[0m  [1m[34mSELECT 1 AS one FROM "chats" WHERE "chats"."room_id" = $1 LIMIT $2[0m  [["room_id", 3], ["LIMIT", 1]]
+  [1m[36mChat Load (20.3ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."room_id" = $1 ORDER BY "chats"."created_at" ASC[0m  [["room_id", 3]]
+  Rendered rooms/show.html.erb within layouts/application (Duration: 67.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 137.6ms | GC: 0.2ms)
+Completed 200 OK in 232ms (Views: 85.8ms | ActiveRecord: 120.9ms (3 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-10-25 15:17:32 +0700
+Started POST "/rooms/3/chats.json" for 127.0.0.1 at 2025-10-25 15:17:44 +0700
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8" => "✓", "authenticity_token" => "pt1MuzpY1ckUsLdOdc2iyH55y6FmHrJYYQ-xgvvP4PIQSnS3RBL3FAtWTOnsYCyjWgeqnIg_dJa4KVNtR9E7fA", "chat" => {"message" => "hay", "username" => "test"}, "room_id" => "3"}
+  [1m[36mRoom Load (22.8ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (37.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChat Create (62.2ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at", "room_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["message", "hay"], ["username", "test"], ["created_at", "2025-10-25 08:17:45.026204"], ["updated_at", "2025-10-25 08:17:45.026204"], ["room_id", 3]]
+  [1m[36mTRANSACTION (18.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 152ms (Views: 0.1ms | ActiveRecord: 140.6ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/rooms" for 127.0.0.1 at 2025-10-25 15:17:52 +0700
+Processing by RoomsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/index.html.erb within layouts/application
+  [1m[36mRoom Exists? (46.5ms)[0m  [1m[34mSELECT 1 AS one FROM "rooms" LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRoom Load (18.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  [1m[36mChat Count (19.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "chats" WHERE "chats"."room_id" = $1[0m  [["room_id", 3]]
+  Rendered rooms/index.html.erb within layouts/application (Duration: 89.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 128.8ms | GC: 0.0ms)
+Completed 200 OK in 131ms (Views: 46.3ms | ActiveRecord: 83.7ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/rooms/3" for 127.0.0.1 at 2025-10-25 15:17:53 +0700
+Processing by RoomsController#show as HTML
+  Parameters: {"id" => "3"}
+  [1m[36mRoom Load (18.0ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/show.html.erb within layouts/application
+  [1m[36mChat Exists? (50.1ms)[0m  [1m[34mSELECT 1 AS one FROM "chats" WHERE "chats"."room_id" = $1 LIMIT $2[0m  [["room_id", 3], ["LIMIT", 1]]
+  [1m[36mChat Load (26.9ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."room_id" = $1 ORDER BY "chats"."created_at" ASC[0m  [["room_id", 3]]
+  Rendered rooms/show.html.erb within layouts/application (Duration: 81.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 121.0ms | GC: 0.0ms)
+Completed 200 OK in 163ms (Views: 45.8ms | ActiveRecord: 94.9ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/rooms/3/chats.json" for 127.0.0.1 at 2025-10-25 15:17:57 +0700
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8" => "✓", "authenticity_token" => "Z1J-_1W_e6pb0UkbuV3uwO18QZhfz1JEMXoO0NTd1W80Bg0tgCP-l8fKTRvw2fH9MIT10RAqhkYeTUxsinxYiA", "chat" => {"message" => "hay lagi", "username" => "test"}, "room_id" => "3"}
+  [1m[36mRoom Load (17.9ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (23.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChat Create (48.3ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at", "room_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["message", "hay lagi"], ["username", "test"], ["created_at", "2025-10-25 08:17:57.130337"], ["updated_at", "2025-10-25 08:17:57.130337"], ["room_id", 3]]
+  [1m[36mTRANSACTION (23.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 159ms (Views: 0.2ms | ActiveRecord: 112.9ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/rooms/3" for 127.0.0.1 at 2025-10-25 15:18:07 +0700
+Processing by RoomsController#show as HTML
+  Parameters: {"id" => "3"}
+  [1m[36mRoom Load (28.3ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/show.html.erb within layouts/application
+  [1m[36mChat Exists? (43.0ms)[0m  [1m[34mSELECT 1 AS one FROM "chats" WHERE "chats"."room_id" = $1 LIMIT $2[0m  [["room_id", 3], ["LIMIT", 1]]
+  [1m[36mChat Load (28.8ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."room_id" = $1 ORDER BY "chats"."created_at" ASC[0m  [["room_id", 3]]
+  Rendered rooms/show.html.erb within layouts/application (Duration: 80.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 158.4ms | GC: 0.0ms)
+Completed 200 OK in 219ms (Views: 88.1ms | ActiveRecord: 100.0ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-10-25 15:18:07 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__a32fc09e_7d6a_4d99_b7b0_b4517feb35eb__0" for 127.0.0.1 at 2025-10-25 15:18:09 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__adf5cc87_3f1d_456f_b00a_b8c10dae9b1a__1" for 127.0.0.1 at 2025-10-25 15:18:09 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__155f179b_0016_40e8_b1da_469b39fb0a21__2" for 127.0.0.1 at 2025-10-25 15:18:09 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__f412769b_7020_4361_8e5a_1401d6fde28e__3" for 127.0.0.1 at 2025-10-25 15:18:09 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__94eb2644_19e1_4e63_80f3_6ea506ec26ea__4" for 127.0.0.1 at 2025-10-25 15:18:09 +0700
+Started GET "/hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__e467e22a_8963_4efe_b0f4_808ae5bc9a4b__5" for 127.0.0.1 at 2025-10-25 15:18:10 +0700
+Started POST "/rooms/3/chats.json" for 127.0.0.1 at 2025-10-25 15:18:20 +0700
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8" => "✓", "authenticity_token" => "5XDdzFGb0Wp6tO8FgYP38VETdCaJe3dHoxkJdhccq07i_-gfXQC_SPWR_rM9xBhMfTIUDZmoqSRWD351u__Ovw", "chat" => {"message" => "ini fauzan", "username" => "fauzan"}, "room_id" => "3"}
+  [1m[36mRoom Load (29.0ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (20.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChat Create (64.4ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at", "room_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["message", "ini fauzan"], ["username", "fauzan"], ["created_at", "2025-10-25 08:18:21.046275"], ["updated_at", "2025-10-25 08:18:21.046275"], ["room_id", 3]]
+  [1m[36mTRANSACTION (48.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 241ms (Views: 0.4ms | ActiveRecord: 161.9ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/rooms/3/chats.json" for 127.0.0.1 at 2025-10-25 15:18:31 +0700
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8" => "✓", "authenticity_token" => "Z1J-_1W_e6pb0UkbuV3uwO18QZhfz1JEMXoO0NTd1W80Bg0tgCP-l8fKTRvw2fH9MIT10RAqhkYeTUxsinxYiA", "chat" => {"message" => "aku bisa melihatnya", "username" => "test"}, "room_id" => "3"}
+  [1m[36mRoom Load (27.8ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (19.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChat Create (38.9ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at", "room_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["message", "aku bisa melihatnya"], ["username", "test"], ["created_at", "2025-10-25 08:18:31.598126"], ["updated_at", "2025-10-25 08:18:31.598126"], ["room_id", 3]]
+  [1m[36mTRANSACTION (19.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 169ms (Views: 0.2ms | ActiveRecord: 105.9ms (2 queries, 0 cached) | GC: 0.0ms)
+
+

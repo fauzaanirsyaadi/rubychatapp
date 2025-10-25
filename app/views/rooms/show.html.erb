@@ -1,32 +1,30 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-3 col-md-2 bg-dark full-height sidebar">
+    <!-- Sidebar: collapse on small screens -->
+    <div class="col-3 col-md-2 bg-dark full-height sidebar d-none d-md-block" id="sidebar">
       <div class="sidebar-content">
         <h5 class="text-white mt-3 text-center">Room: <%= @room.name %></h5>
         <hr class="bg-white">
-        
-        <!-- Username Input Form -->
-        <div class="username-input-wrapper">
-          <label class="text-white small mb-2">Enter your username:</label>
-          <input type="text" class="form-control sidebar-form" placeholder="Type username and press Enter" required autofocus />
-          <small class="text-warning mt-2 d-block">⚠️ Username required to chat</small>
-        </div>
-        
-        <!-- Username Display (hidden by default) -->
-        <div class="username d-none">
+
+        <!-- NOTE: username should not be set inside the room.
+             We display current username (filled by JS) and a small hint. -->
+        <div class="username">
           <h6 class="text-white mt-3 text-center">
-            <i class="bi bi-person-circle"></i> 
+            <i class="bi bi-person-circle"></i>
             <span class="username-display"></span>
           </h6>
-          <small class="text-success text-center d-block">✓ Ready to chat</small>
+          <small class="text-warning mt-2 d-block set-username-note">If you don't have a username, a modal will ask you to set one.</small>
         </div>
-        
+
         <%= link_to "← Back to Rooms", rooms_path, class: "btn btn-sm btn-outline-light mt-3 w-100" %>
       </div>
     </div>
-    
+
+    <!-- Main area: add toggle button for small screens -->
     <div class="col-9 col-md-10 bg-light full-height">
       <div class="container-fluid">
+        <!-- Sidebar toggle visible only on small screens -->
+        <button id="sidebar-toggle" class="btn btn-outline-secondary btn-sm mb-2 d-md-none" aria-controls="sidebar" aria-expanded="false">☰ Menu</button>
         <div class="chat-box py-2" data-room-id="<%= @room.id %>">
           <% if @chats.empty? %>
             <div class="text-center text-muted mt-5">
@@ -46,7 +44,7 @@
             <% end %>
           <% end %>
         </div>
-        
+
         <div class="chat-text-input">
           <%= form_with(model: [@room, @chat], remote: true, format: :json, id: 'chat-form', data: { turbolinks: false }) do |form| %>
             <div class="field position-relative">

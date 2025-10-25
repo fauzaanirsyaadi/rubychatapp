@@ -3,7 +3,7 @@ default: &default
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS", 5) %>
   timeout: 5000
-  url: <%= ENV["DATABASE_URL" || "postgres://postgres:[YOUR-PASSWORD]@jlammtripkisyxhpxlpu.db.ap-southeast-1.nhost.run:5432/jlammtripkisyxhpxlpu"] %>
+  url: <%= ENV["DATABASE_URL"] %>
   # Jika DATABASE_URL kosong, gunakan field-field di bawah (tanpa melempar error)
   <% if ENV["DATABASE_URL"].to_s.strip.empty? %>
   host: <%= ENV["DB_HOST"] || "jlammtripkisyxhpxlpu.db.ap-southeast-1.nhost.run" %>
@@ -21,7 +21,7 @@ development:
 
 test:
   adapter: postgresql
-  url: <%= ENV["DATABASE_URL_TEST"] || ENV["DATABASE_URL"] %>
+  url: <%= ENV["DATABASE_URL_TEST"] %>
 
 production:
   adapter: postgresql

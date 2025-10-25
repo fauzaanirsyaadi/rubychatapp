@@ -2,8 +2,25 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 $(document).ready =>
-  username = ''
+  # Use username from localStorage
+  username = window.localStorage.getItem('chat_username') || ''
   roomId = $('.chat-box').data('room-id')
+
+  # Sidebar toggle for small screens
+  $('#sidebar-toggle').on 'click', (event) ->
+    event.preventDefault()
+    $sidebar = $('#sidebar')
+    if $sidebar.hasClass('show')
+      $sidebar.removeClass('show')
+      $('body').removeClass('sidebar-open')
+      $('#sidebar').addClass('d-none') if window.innerWidth < 768
+      $('#sidebar-toggle').attr('aria-expanded', 'false')
+    else
+      $sidebar.removeClass('d-none') if window.innerWidth < 768
+      $sidebar.addClass('show')
+      $('body').addClass('sidebar-open')
+      $('#sidebar-toggle').attr('aria-expanded', 'true')
+    return
 
   # Format date function
   formatDate = (dateString) ->
@@ -32,42 +49,33 @@ $(document).ready =>
     $('.chat-box').scrollTop($('.chat-box')[0].scrollHeight)
     return
 
-  # Event handler untuk input username - hanya tangkap Enter key
-  $('.sidebar-form').on 'keypress', (event) ->
-    if event.which == 13 or event.keyCode == 13
-      event.preventDefault()
-      
-      username = $(this).val().trim()
-      
-      if username.length > 0
-        $('.username-display').text(username)
-        $('#username').val(username)
-        $('.username').removeClass('d-none')
-        $('.username-input-wrapper').hide()
-        $('#message').prop('disabled', false)
-        $('#message').attr('placeholder', 'Type your message and press Enter...')
-        $('#message').focus()
-      else
-        alert('Please enter a username')
-      
-      return false
-    return
+  # Initialize username hidden field and message input state
+  if username and username.trim().length > 0
+    $('#username').val(username)
+    $('.username-display').text(username)
+    $('.username').removeClass('d-none')
+    $('#message').prop('disabled', false)
+    $('#message').attr('placeholder', 'Type your message and press Enter...')
+  else
+    # ensure message input disabled until username is set
+    $('#message').prop('disabled', true)
+    $('#message').attr('placeholder', 'Please set username to chat')
 
   # Prevent default form submission
   $('#chat-form').on 'submit', (event) ->
     event.preventDefault()
     event.stopPropagation()
-    
-    # Validasi: pastikan username sudah diisi
+
+    # Get username from hidden field (populated from localStorage or modal)
     currentUsername = $('#username').val()
     if !currentUsername or currentUsername.trim().length == 0
-      alert('Please enter your username first before sending a message!')
-      $('.sidebar-form').focus()
+      # show the username modal (global)
+      $('#usernameModal').modal('show')
       return false
-    
+
     formData = $(this).serialize()
     roomId = $('.chat-box').data('room-id')
-    
+
     $.ajax
       url: "/rooms/#{roomId}/chats.json"
       type: 'POST'
@@ -80,38 +88,34 @@ $(document).ready =>
       error: (xhr, status, error) ->
         console.error('Error sending message:', error)
         alert('Failed to send message. Please try again.')
-    
+
     return false
 
-  # Submit form ketika Enter ditekan pada message input
+  # Submit form when Enter is pressed on message input
   $('#message').on 'keypress', (event) ->
     if event.which == 13 or event.keyCode == 13
       event.preventDefault()
-      
-      # Validasi: pastikan username sudah diisi
       currentUsername = $('#username').val()
       if !currentUsername or currentUsername.trim().length == 0
-        alert('Please enter your username first before sending a message!')
-        $('.sidebar-form').focus()
+        $('#usernameModal').modal('show')
         return false
-      
+
       if $(this).val().trim().length > 0
         $('#chat-form').submit()
-      
+
       return false
     return
 
-  # Tambahkan event handler untuk klik pada message input jika belum ada username
+  # When clicking on message input, ensure username is set
   $('#message').on 'click focus', (event) ->
     currentUsername = $('#username').val()
     if !currentUsername or currentUsername.trim().length == 0
       event.preventDefault()
-      alert('Please enter your username in the sidebar first!')
-      $('.sidebar-form').focus()
+      $('#usernameModal').modal('show')
       return false
     return
 
-  # Pusher subscription - hanya jika ada roomId
+  # Pusher subscription - only if there is a roomId
   if roomId
     Pusher.logToConsole = true
     pusher = new Pusher('62cd985e9d8238ed4033',

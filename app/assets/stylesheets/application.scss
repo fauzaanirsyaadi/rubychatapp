@@ -159,3 +159,58 @@ input.form-control.sidebar-form {
   }
 }
 
+/* Responsive tweaks for small devices */
+@media (max-width: 767.98px) {
+  /* Sidebar becomes overlay panel */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 80%;
+    max-width: 320px;
+    z-index: 1050;
+    background: #212529; /* same as bg-dark */
+    padding-top: 1rem;
+    overflow-y: auto;
+    -webkit-transform: translateX(-110%);
+    transform: translateX(-110%);
+    transition: transform 0.25s ease;
+  }
+
+  /* When shown, slide in */
+  .sidebar.show {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  /* Ensure sidebar content looks correct */
+  .sidebar .sidebar-content {
+    padding: 1rem;
+  }
+
+  /* Chat box should fit between top (no header) and message input */
+  .chat-box {
+    height: calc(100vh - 120px); /* reserve space for toggle + input */
+    padding: 0.75rem;
+  }
+
+  /* Chat input full width and fixed at bottom */
+  .chat-text-input {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 0.75rem;
+    background: #fff;
+    border-top: 1px solid #dee2e6;
+    z-index: 1040;
+  }
+
+  /* When sidebar open, prevent body scroll (optional) */
+  body.sidebar-open {
+    overflow: hidden;
+  }
+}
+

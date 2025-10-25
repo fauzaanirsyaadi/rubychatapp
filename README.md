@@ -102,6 +102,22 @@ rails server
 
 The application will be available at `http://localhost:3000`
 
+## Running Tests
+
+This project uses RSpec for testing. To run the test suite, you first need to prepare the test database:
+
+```bash
+rails db:test:prepare
+```
+
+Then, run the following command:
+
+```bash
+bundle exec rspec
+```
+
+This will execute all test files located in the `spec` directory.
+
 ## Usage
 
 ### Creating a Chat Room
